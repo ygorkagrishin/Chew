@@ -1,7 +1,5 @@
 footer
-  .logo.footer__logo
-    h2 Chew
-    p restaurant
+  include _logo
 
   .footer__row
     .footer__col
@@ -31,13 +29,4 @@ footer
         li
           | info@chew.com
 
-  ul.social__list
-    li
-      a.social__link(href="javascript:void(0);")
-        ion-icon.social__icon(name="logo-facebook")
-    li
-      a.social__link(href="javascript:void(0);")
-        ion-icon.social__icon(name="logo-twitter")
-    li
-      a.social__link(href="javascript:void(0);")
-        ion-icon.social__icon(name="logo-foursquare")
+  include _social

@@ -277,46 +277,93 @@ html {
 }
 h1 {
   font: 48px/60px 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
   color: #000;
 }
 h2 {
   font: 48px/60px 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
   color: #000;
 }
 h3 {
   font: 48px/60px 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
   color: #000;
 }
 h4 {
   font: 48px/60px 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
   color: #000;
 }
 h5 {
   font: 48px/60px 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
   color: #000;
 }
 h6 {
   font: 48px/60px 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
   color: #000;
 }
 .page__hero {
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 800px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page__hero .container {
+  text-align: center;
+}
+.page__headline {
+  margin-bottom: 37px;
+  color: #fff;
+}
+.page__headline span {
+  font: 72px/1 'great-vibes-regular', sans-serif, arial;
+  text-transform: initial;
+  color: #efba39;
+}
+.page__inf {
+  padding: 30px 50px;
+}
+.page__phone {
+  margin-bottom: 16px;
+  font: 14px/1 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
+  color: #fff;
+}
+.page__phone span {
+  color: #efba39;
 }
 .btn {
   display: inline-block;
+  font: 14px 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 25px;
 }
 .btn_type_reservation {
   height: 40px;
   padding: 0 32px;
-  font: 14px/40px 'antonio-regular', sans-serif, arial;
-  text-transform: uppercase;
-  color: #fff;
+  line-height: 40px;
   border: 2px solid #fff;
-  border-radius: 25px;
 }
 .btn_type_reservation:hover {
   color: #efba39;
   border-color: #efba39;
+}
+.btn_type_more {
+  height: 50px;
+  padding: 0 53px;
+  line-height: 50px;
+  background-color: #ef4a09;
 }
 header {
   display: -webkit-box;
@@ -344,7 +391,8 @@ header {
   color: #fff;
 }
 .logo p {
-  font: 9px/1 'antonio-regular', sans-serif, arial;
+  font: 9px 'antonio-regular', sans-serif, arial;
+  line-height: 9px;
   color: #fff;
 }
 .nav ul {
@@ -366,7 +414,7 @@ header {
 .nav a:hover {
   color: #efba39;
 }
-.social__list {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,23 +422,21 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.social__list li:not(:last-child) {
+.social li:not(:last-child) {
   margin-right: 10px;
 }
-.social__link {
+.social a {
   display: block;
   width: 30px;
   height: 30px;
   text-align: center;
   line-height: 36px;
+  color: #fff;
   background-color: #797979;
   border-radius: 50%;
 }
-.social__link:hover {
+.social a:hover {
   background-color: #efba39;
-}
-.social__icon {
-  color: #fff;
 }
 footer {
   display: -webkit-box;

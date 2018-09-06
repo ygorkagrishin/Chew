@@ -9,6 +9,17 @@ block scripts
 block content 
   .page__hero
     include modules/_header
+
+    .container
+      h1.page__headline
+        span welcome to 
+        <br>
+        | Chew Restaurant 
+      a(href="javascript:void(0);").page__btn.page__btn_type_more.btn.btn_type_more 
+        | Let's explore more 
+
+    .page__inf
+      p.page__phone Quick Reservation: <span>+212 342 67382</span> 
+      include modules/_social
   
-  .page__footer
-    include modules/_footer
+  include modules/_footer

@@ -7,7 +7,31 @@
 @import 'layout/_layout.styl'
 
 .page__hero
-  height 100vh
+  display flex
+  min-height 800px
+  flex-direction column
+  justify-content space-between
+  .container
+      text-align center
+
+.page__headline
+  margin-bottom 37px
+  color whiteColor
+  span 
+    font 72px / 1 greatFont 
+    text-transform initial
+    color yellowColor
+
+.page__inf
+  padding 30px 50px
+
+.page__phone
+  margin-bottom 16px
+  font 14px / 1 baseFont2
+  text-transform uppercase
+  color whiteColor
+  span 
+    color yellowColor
 
 @import '_homepage.styl'
 
