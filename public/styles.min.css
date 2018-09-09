@@ -264,10 +264,9 @@ svg {
   border: none;
   overflow: hidden;
 }
-html {
+body {
   font: 14px/24px 'lora-regular', sans-serif, arial;
   color: #797979;
-  background-color: #808080;
 }
 .container {
   width: 98%;
@@ -276,71 +275,39 @@ html {
   padding: 0 15px;
 }
 h1 {
-  font: 48px/60px 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h2 {
-  font: 48px/60px 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h3 {
-  font: 48px/60px 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h4 {
-  font: 48px/60px 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h5 {
-  font: 48px/60px 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h6 {
-  font: 48px/60px 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
-.page__hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 800px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.page__hero .container {
-  text-align: center;
-}
-.page__headline {
-  margin-bottom: 37px;
-  color: #fff;
-}
-.page__headline span {
-  font: 72px/1 'great-vibes-regular', sans-serif, arial;
-  text-transform: initial;
-  color: #efba39;
-}
-.page__inf {
-  padding: 30px 50px;
-}
-.page__phone {
-  margin-bottom: 16px;
-  font: 14px/1 'antonio-regular', sans-serif, arial;
-  text-transform: uppercase;
-  color: #fff;
-}
-.page__phone span {
-  color: #efba39;
+.sect__title {
+  margin-bottom: 52px;
+  font-size: 14px;
+  letter-spacing: 0.7px;
 }
 .btn {
   display: inline-block;
@@ -353,6 +320,7 @@ h6 {
   height: 40px;
   padding: 0 32px;
   line-height: 40px;
+  letter-spacing: 0.5px;
   border: 2px solid #fff;
 }
 .btn_type_reservation:hover {
@@ -361,9 +329,393 @@ h6 {
 }
 .btn_type_more {
   height: 50px;
-  padding: 0 53px;
-  line-height: 50px;
+  padding: 0 52px;
+  line-height: 54px;
+  letter-spacing: 1.5px;
   background-color: #ef4a09;
+}
+.page__hero {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("img/content/homepage/annie-spratt-464747-unsplash_1920px.png") no-repeat center/cover;
+}
+.page__hero .container {
+  text-align: center;
+}
+.page__hero::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  content: '';
+}
+.page__headline {
+  margin-bottom: 24px;
+  font: 70px/1 'antonio-regular', sans-serif, arial;
+  color: #fff;
+}
+.page__headline span {
+  font: 120px/110px 'great-vibes-regular', sans-serif, arial;
+  text-transform: initial;
+  color: #efba39;
+}
+.page__inf {
+  padding: 30px 50px;
+}
+.page__phone {
+  margin-bottom: 12px;
+  font: 14px/1 'antonio-regular', sans-serif, arial;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.page__phone span {
+  display: inline-block;
+  margin-left: 6px;
+  color: #efba39;
+}
+.homepage-about__inner {
+  padding: 150px 0;
+}
+.homepage-about__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.homepage-about__col {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.homepage-about__cont p:not(:last-child) {
+  margin-bottom: 24px;
+}
+.homepage-about__title {
+  margin-bottom: 20px;
+}
+.homepage-about__text {
+  margin-bottom: 31px;
+}
+.homepage-about__btn_type_more {
+  height: 42px;
+  padding: 0 48px;
+  line-height: 50px;
+}
+.homepage-feat__inner {
+  padding: 30px 0 150px 0;
+}
+.homepage-feat__top,
+.homepage-blog__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 42px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.homepage-feat__top .sect__title,
+.homepage-blog__top .sect__title {
+  margin-bottom: 0;
+}
+.homepage-feat__menu-page,
+.homepage-blog__blog-page {
+  font-family: 'lora-italic', sans-serif, arial;
+}
+.homepage-feat__menu-page [name="arrow-forward"],
+.homepage-blog__blog-page [name="arrow-forward"] {
+  vertical-align: -3px;
+}
+.homepage-feat__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.homepage-feat__col {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.homepage-feat__header {
+  margin-bottom: 46px;
+}
+.homepage-feat__title {
+  margin-bottom: 19px;
+}
+.homepage-feat__switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homepage-feat__switch li:not(:last-child) {
+  margin-right: 26px;
+}
+.homepage-feat__switch button {
+  position: relative;
+  z-index: 1;
+}
+.homepage-feat__switch button.active {
+  color: #000;
+}
+.homepage-feat__switch button.active::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #efba39;
+}
+.homepage-feat__col:not(:last-child) {
+  margin-right: 30px;
+}
+.homepage-feat__dish:not(:last-child) {
+  margin-bottom: 30px;
+}
+.homepage-dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.homepage-dish__header {
+  position: relative;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+.homepage-dish__header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  display: block;
+  background-color: #efba39;
+}
+.homepage-dish__pic {
+  position: relative;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  margin-right: 30px;
+  padding-top: 150px;
+  background-color: #797979;
+  overflow: hidden;
+}
+.homepage-dish__pic img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.homepage-dish__desc {
+  padding: 30px 0 22px 0;
+}
+.homepage-dish__name {
+  margin-bottom: 6px;
+  font-size: 18px;
+  text-transform: initial;
+}
+.homepage-dish__price {
+  font: 14px/1 'antonio-regular', sans-serif, arial;
+}
+.homepage-dish__comp {
+  font-size: 14px;
+}
+.homepage-reserv__inner {
+  padding-bottom: 66px;
+}
+.homepage-reserv__title {
+  margin-bottom: 30px;
+}
+.homepage-reserv__reserv {
+  position: relative;
+  z-index: 1;
+  padding: 63px 72px 70px 72px;
+  background: #797979 url("img/content/homepage/nick-karvounis-463853-unsplash_1170px.png") no-repeat center/cover;
+}
+.homepage-reserv__reserv::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+.homepage-reserv__nb {
+  margin-bottom: 22px;
+  color: #fff;
+}
+.homepage-reserv__nb span {
+  color: #efba39;
+}
+.homepage-reserv__row {
+  clear: both;
+}
+@supports (display: flex) {
+  .homepage-reserv__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.homepage-reserv__col {
+  float: left;
+  width: 50%;
+}
+.homepage-reserv__col:not(:last-child) {
+  padding-right: 54px;
+}
+@supports (display: flex) {
+  .homepage-reserv__col {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+.homepage-form__rows {
+  margin-bottom: 30px;
+}
+.homepage-form__row {
+  clear: both;
+}
+.homepage-form__row:not(:last-child) {
+  margin-bottom: 34px;
+}
+@supports (display: flex) {
+  .homepage-form__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.homepage-form__col {
+  float: left;
+}
+.homepage-form__col_size_md {
+  width: 50%;
+}
+@supports (display: flex) {
+  .homepage-form__col_size_md {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+.homepage-form__col_size_lg {
+  width: 100%;
+}
+@supports (display: flex) {
+  .homepage-form__col_size_lg {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+.homepage-form__col:not(:last-child) {
+  padding-right: 10px;
+}
+.homepage-form__label {
+  display: block;
+  margin-bottom: 10px;
+  font: 14px/1 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
+  color: #fff;
+}
+.homepage-form__input {
+  width: 100%;
+  padding: 7px 20px;
+  background-color: #fff;
+}
+.homepage-form__submit {
+  height: 39px;
+  padding: 0 36px;
+  font-size: 12px;
+  line-height: 40px;
+}
+.homepage-reserv__map {
+  position: relative;
+}
+.homepage-reserv__pic {
+  position: absolute;
+  top: 6px;
+  left: 3%;
+  width: 97.5%;
+  padding-top: 408px;
+  background-color: #808080;
+}
+.homepage-blog__blog-page [name="arrow-forward"] {
+  vertical-align: -3px;
+}
+.homepage-blog__inner {
+  padding: 150px 0 143px 0;
+}
+.homepage-blog__title {
+  margin-bottom: 32px;
+}
+.homepage-blog__posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.homepage-blog__post:not(:last-child) {
+  margin-right: 30px;
+}
+.homepage-post {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.homepage-post__pic {
+  position: relative;
+  margin-bottom: 23px;
+  padding-top: 270px;
+  background-color: #797979;
+  overflow: hidden;
+}
+.homepage-post__pic img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.homepage-post__name {
+  margin: 9px 0 24px 0;
+  font-size: 18px;
+  text-transform: initial;
+}
+.homepage-post__text {
+  margin-bottom: 26px;
+}
+.homepage-post__continue {
+  font: 14px/1 'antonio-regular', sans-serif, arial;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #000;
+}
+.homepage-post__continue ion-icon {
+  margin-left: 6px;
+  vertical-align: -1px;
 }
 header {
   display: -webkit-box;
@@ -372,7 +724,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 50px;
+  padding: 27px 50px;
 }
 .header__logo {
   -webkit-box-flex: 2;
@@ -404,7 +756,7 @@ header {
           align-items: center;
 }
 .nav li {
-  margin-right: 43px;
+  margin-right: 46px;
 }
 .nav a {
   font: 14px/48px 'antonio-regular', sans-serif, arial;
@@ -423,7 +775,7 @@ header {
           align-items: center;
 }
 .social li:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 11px;
 }
 .social a {
   display: block;
@@ -439,6 +791,8 @@ header {
   background-color: #efba39;
 }
 footer {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,8 +802,19 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 100px 50px;
-  background-color: #393a3f;
+  padding: 99px 50px 86px 50px;
+  background: url("img/content/homepage/annie-spratt-464747-unsplash_1920px.png") no-repeat bottom/cover;
+}
+footer::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  content: '';
 }
 .footer__row {
   display: -webkit-box;
@@ -457,7 +822,7 @@ footer {
   display: flex;
 }
 .footer__col .footer__name {
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   font: 12px/1 'antonio-regular', sans-serif, arial;
   color: #797979;
 }

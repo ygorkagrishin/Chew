@@ -1,16 +1,28 @@
 footer
+  position relative
+  z-index $z-index1
   display flex
   align-items flex-start
   justify-content space-between
-  padding 100px 50px
-  background-color #393a3f
+  padding 99px 50px 86px 50px
+  background url('img/content/homepage/annie-spratt-464747-unsplash_1920px.png') no-repeat bottom / cover
+  &::after
+    position absolute
+    top 0
+    left 0 
+    z-index -1
+    display block
+    width 100%
+    height 100%
+    background-color rgba(blackColor,.8)
+    content ''
 
 .footer__row
   display flex
 
 .footer__col
   .footer__name
-    margin-bottom 26px
+    margin-bottom 20px
     font 12px / 1 baseFontTitle
     color greyColor
   li
