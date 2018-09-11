@@ -1,0 +1,90 @@
+.team
+  padding 150px 0
+  .sect__title
+    text-align center
+
+.team__title
+  margin-bottom 20px
+  text-align center
+
+.team__switch
+  @extend .homepage-feat__switch
+  margin-bottom 45px
+  justify-content center
+
+.team__rows
+  margin-bottom 22px
+
+.team__row
+  display flex
+
+.team__col
+  flex 1
+  margin-bottom 30px
+  &:not(:last-child)
+    padding-right 30px
+
+.team-member
+  text-align center
+  border 1px solid greyColor
+
+.team-member__pic
+  position relative
+  padding-top 300px
+  background-color greyColor
+  overflow hidden
+  img 
+    position absolute
+    top -25%
+    left 0
+    width 100%
+
+.team-member__desc
+  padding 30px 0 
+
+.team-member__name
+  margin-bottom 6px
+  font-size 18px
+
+.team-member__status
+  font-size 12px
+
+.team-member__social
+  margin-top 10px
+
+.team-pagination
+  display flex
+  align-items center
+  justify-content center
+  &__btn
+    line-height 44px
+    text-align center
+
+.team-pagination__pages
+  display flex
+  align-items center
+  justify-content center
+  margin 0 5px
+  text-align center
+  li
+    display inline-block
+    white-space nowrap
+    a
+      display block
+      width 40px
+      height 40px
+      font 14px / 41px baseFont2
+      border 1px solid greyColor
+      border-radius 50%
+      &.active
+        color blackColor
+        border-color yellowColor 
+        background-color yellowColor
+    &:not(:last-child)
+      margin-right 5px
+
+.team-pagination__btn
+  width 40px 
+  height 40px
+  border 1px solid greyColor 
+  border-radius 50%

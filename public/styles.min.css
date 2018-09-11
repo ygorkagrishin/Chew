@@ -371,11 +371,12 @@ h6 {
 }
 .page__headline span {
   font: 120px/110px 'great-vibes-regular', sans-serif, arial;
-  text-transform: initial;
+  text-transform: capitalize;
   color: #efba39;
 }
 .page__inf {
   padding: 30px 50px;
+  text-align: center;
 }
 .page__phone {
   margin-bottom: 12px;
@@ -388,6 +389,9 @@ h6 {
   display: inline-block;
   margin-left: 6px;
   color: #efba39;
+}
+.homepage-page__inf {
+  text-align: left;
 }
 .homepage-about__inner {
   padding: 150px 0;
@@ -506,7 +510,8 @@ h6 {
 .homepage-feat__title {
   margin-bottom: 19px;
 }
-.homepage-feat__switch {
+.homepage-feat__switch,
+.team__switch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,17 +519,21 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.homepage-feat__switch li:not(:last-child) {
+.homepage-feat__switch li:not(:last-child),
+.team__switch li:not(:last-child) {
   margin-right: 26px;
 }
-.homepage-feat__switch button {
+.homepage-feat__switch button,
+.team__switch button {
   position: relative;
   z-index: 1;
 }
-.homepage-feat__switch button.active {
+.homepage-feat__switch button.active,
+.team__switch button.active {
   color: #000;
 }
-.homepage-feat__switch button.active::after {
+.homepage-feat__switch button.active::after,
+.team__switch button.active::after {
   content: '';
   position: absolute;
   bottom: 20%;
@@ -776,6 +785,122 @@ h6 {
   margin-left: 6px;
   vertical-align: -1px;
 }
+.team {
+  padding: 150px 0;
+}
+.team .sect__title {
+  text-align: center;
+}
+.team__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.team__switch {
+  margin-bottom: 45px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.team__rows {
+  margin-bottom: 22px;
+}
+.team__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.team__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 30px;
+}
+.team__col:not(:last-child) {
+  padding-right: 30px;
+}
+.team-member {
+  text-align: center;
+  border: 1px solid #797979;
+}
+.team-member__pic {
+  position: relative;
+  padding-top: 300px;
+  background-color: #797979;
+  overflow: hidden;
+}
+.team-member__pic img {
+  position: absolute;
+  top: -25%;
+  left: 0;
+  width: 100%;
+}
+.team-member__desc {
+  padding: 30px 0;
+}
+.team-member__name {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+.team-member__status {
+  font-size: 12px;
+}
+.team-member__social {
+  margin-top: 10px;
+}
+.team-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.team-pagination__btn {
+  line-height: 44px;
+  text-align: center;
+}
+.team-pagination__pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 5px;
+  text-align: center;
+}
+.team-pagination__pages li {
+  display: inline-block;
+  white-space: nowrap;
+}
+.team-pagination__pages li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font: 14px/41px 'antonio-regular', sans-serif, arial;
+  border: 1px solid #797979;
+  border-radius: 50%;
+}
+.team-pagination__pages li a.active {
+  color: #000;
+  border-color: #efba39;
+  background-color: #efba39;
+}
+.team-pagination__pages li:not(:last-child) {
+  margin-right: 5px;
+}
+.team-pagination__btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #797979;
+  border-radius: 50%;
+}
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -825,16 +950,11 @@ header {
 .nav a:hover {
   color: #efba39;
 }
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.social li {
+  display: inline-block;
 }
 .social li:not(:last-child) {
-  margin-right: 11px;
+  margin-right: 6px;
 }
 .social a {
   display: block;
