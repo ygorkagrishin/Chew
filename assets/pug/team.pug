@@ -7,173 +7,171 @@ block scripts
   script(src="jquery.min.js")
 
 block content
-  .page__hero
-    include modules/_header
+  .page__team
+    .page__hero
+      include modules/_header
 
-    .container
-      h1.page__headline
-        span meet 
-        <br>
-        | Our team
+      .container
+        h1.page__headline
+          span meet 
+          <br>
+          | Our team
 
-    .page__inf
-      p.page__phone Quick Reservation: <span>+212 342 67382</span> 
-      include modules/_social
+      .page__inf.page__inf_align_center
+        p.page__phone Quick Reservation: <span>+212 342 67382</span> 
+        include modules/_social
 
-  main.page__main.team
-    .container
-      h2.sect__title Meet our staff
+    main.page__main.team
+      .container
+        h2.sect__title Meet our staff
 
-      h3.team__title We love our customers
+        h3.team__title We love our customers
 
-      ul.team__switch 
-        li
-          button(type="button").active All
-        li
-          button(type="button") Chef
-        li
-          button(type="button") Waiter
-        li
-          button(type="button") Manager
+        ul.team__switch 
+          li
+            button(type="button").active All
+          li
+            button(type="button") Chef
+          li
+            button(type="button") Waiter
+          li
+            button(type="button") Manager
 
-      .team__list#team-list-1
-        .team__rows
-          .team__row
-            .team__col
-              .team__member.team-member
-                .team-member__pic
-                  img(src="img/content/team/ryan-holloway-351140-unsplash_500px.png", alt="member pic") 
-                .team-member__desc
-                  h4.team-member__name Russell Stephens
-                  span.team-member__status General manager
+        .team__list#team-list-1
+          .team__rows
+            .team__row
+              .team__col
+                .team__member.team-member
+                  .team-member__pic
+                    img(src="img/content/team/ryan-holloway-351140-unsplash_500px.png", alt="member pic") 
+                  .team-member__desc
+                    h4.team-member__name Russell Stephens
+                    span.team-member__status General manager
 
-                  ul.social.team-member__social
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-facebook")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-twitter")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-instagram")
-                        
-            .team__col
-              .team__member.team-member
-                .team-member__pic
-                  img(src="img/content/team/jeslyn-chanchaleune-349125-unsplash_500px.png", alt="member pic") 
-                .team-member__desc
-                  h4.team-member__name Russell Stephens
-                  span.team-member__status Chef
+                    ul.social.team-member__social
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-facebook")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-twitter")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-instagram")
+                          
+              .team__col
+                .team__member.team-member
+                  .team-member__pic
+                    img(src="img/content/team/jeslyn-chanchaleune-349125-unsplash_500px.png", alt="member pic") 
+                  .team-member__desc
+                    h4.team-member__name Robert Jones 
+                    span.team-member__status Chef
 
-                  ul.social.team-member__social
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-facebook")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-twitter")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-instagram")
-            
-            .team__col
-              .team__member.team-member
-                .team-member__pic
-                  img(src="img/content/team/cbx-263152-unsplash_500px.png", alt="member pic") 
-                .team-member__desc
-                  h4.team-member__name Russell Stephens
-                  span.team-member__status Waiter
-                  ul.social.team-member__social
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-facebook")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-twitter")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-instagram")
+                    ul.social.team-member__social
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-facebook")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-twitter")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-instagram")
+              
+              .team__col
+                .team__member.team-member
+                  .team-member__pic
+                    img(src="img/content/team/cbx-263152-unsplash_500px.png", alt="member pic") 
+                  .team-member__desc
+                    h4.team-member__name Willie Crawford 
+                    span.team-member__status Waiter
+                    ul.social.team-member__social
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-facebook")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-twitter")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-instagram")
 
-          .team__row
-            .team__col
-              .team__member.team-member
-                .team-member__pic
-                  img(src="img/content/team/rawpixel-660724-unsplash_500px.png", alt="member pic") 
-                .team-member__desc
-                  h4.team-member__name Russell Stephens
-                  span.team-member__status Manager
+            .team__row
+              .team__col
+                .team__member.team-member
+                  .team-member__pic
+                    img(src="img/content/team/rawpixel-660724-unsplash_500px.png", alt="member pic") 
+                  .team-member__desc
+                    h4.team-member__name Samantha Rogers
+                    span.team-member__status Manager
 
-                  ul.social.team-member__social
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-facebook")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-twitter")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-instagram")
+                    ul.social.team-member__social
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-facebook")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-twitter")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-instagram")
 
-            .team__col
-              .team__member.team-member
-                .team-member__pic
-                  img(src="img/content/team/nathan-dumlao-486999-unsplash_500px.png", alt="member pic") 
-                .team-member__desc
-                  h4.team-member__name Russell Stephens
-                  span.team-member__status Waiter
+              .team__col
+                .team__member.team-member
+                  .team-member__pic
+                    img(src="img/content/team/nathan-dumlao-486999-unsplash_500px.png", alt="member pic") 
+                  .team-member__desc
+                    h4.team-member__name Sam Hanson
+                    span.team-member__status Waiter
 
-                  ul.social.team-member__social
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-facebook")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-twitter")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-instagram")
+                    ul.social.team-member__social
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-facebook")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-twitter")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-instagram")
 
-            .team__col
-              .team__member.team-member
-                .team-member__pic
-                  img(src="img/content/team/matheus-ferrero-233592-unsplash_500px.png", alt="member pic") 
-                .team-member__desc
-                  h4.team-member__name Russell Stephens
-                  span.team-member__status Waiter
+              .team__col
+                .team__member.team-member
+                  .team-member__pic
+                    img(src="img/content/team/matheus-ferrero-233592-unsplash_500px.png", alt="member pic") 
+                  .team-member__desc
+                    h4.team-member__name Rose Lopez
+                    span.team-member__status Waiter
 
-                  ul.social.team-member__social
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-facebook")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-twitter")
-                    li
-                      a(href="javascript:void(0);")
-                        ion-icon(name="logo-instagram")
+                    ul.social.team-member__social
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-facebook")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-twitter")
+                      li
+                        a(href="javascript:void(0);")
+                          ion-icon(name="logo-instagram")
 
-        .team__pagination.team-pagination
-          //- button prev
-          button(type="button").team-pagination__btn.team-pagination__btn_type_prev
-            ion-icon(name="arrow-round-back")
-          //- button prev end
+          .team__pagination.team-pagination
+            //- button prev
+            button(type="button").team-pagination__btn.team-pagination__btn_type_prev
+              ion-icon(name="arrow-round-back")
+            //- button prev end
 
-          ul.team-pagination__pages
-            li
-              a(href="javascript:void(0);", title="1").active
-                | 1
-            li
-              a(href="javascript:void(0);", title="2")
-                | 2
-            li
-              a(href="javascript:void(0);", title="3")
-                | 3
+            ul.team-pagination__pages
+              li
+                a(href="javascript:void(0);", title="1").active
+                  | 1
+              li
+                a(href="javascript:void(0);", title="2")
+                  | 2
 
-          //- button next
-          button(type="button").team-pagination__btn.team-pagination__btn_type_next
-            ion-icon(name="arrow-round-forward")
-          //- button next end
+            //- button next
+            button(type="button").team-pagination__btn.team-pagination__btn_type_next
+              ion-icon(name="arrow-round-forward")
+            //- button next end
 
-
-  include modules/_footer
+    .page__footer
+      include modules/_footer

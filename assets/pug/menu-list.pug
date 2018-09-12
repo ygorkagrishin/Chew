@@ -1,0 +1,202 @@
+extends layout/_layout
+
+block title
+  title Chew
+
+block scripts
+  script(src="jquery.min.js")
+
+block content 
+  .page__menu-list
+    .page__hero
+      include modules/_header
+
+      .container
+        h1.page__headline
+          span Taste
+          <br>
+          | Our menus
+
+      .page__inf.page__inf_align_center
+        p.page__phone Quick Reservation: <span>+212 342 67382</span> 
+        include modules/_social
+  
+    main.page__main.menu-list
+      .container
+        h2.sect__title Menu set
+
+        .menu-list__header
+            h3.menu-list__main-title Explore our fantastic menus
+            p
+              | Vestibulum quis posuere ligula. Fusce in odio ac diam finibus tempus. 
+              | Suspendisse potenti. Etiam accumsan purus magna, 
+              | et viverra neque volutpat fermentum. Vivamus consequat, 
+              | felis at aliquam elementum, 
+              | massa sem dignissim elit sit amet cursus massa tortor eget ante.
+
+        .menu-list__menu
+          
+          //- menu-list breakfast
+          .menu-list__sect.menu-list__breakfast
+            .menu-list__top(style="background: url('img/content/menu-list/monika-grabkowska-646499-unsplash_1170px.png') no-repeat center / cover")
+              h4.menu-list__sect-name
+                span fresh
+                <br>
+                | #breakfast
+            .menu-list__row
+              .menu-list__col
+                ul.menu-list__list
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+              .menu-list__col
+                ul.menu-list__list
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+          //- menu-list breakfast end
+          
+          //- menu-list lunch
+          .menu-list__sect.menu-list__breakfast
+            .menu-list__top(style="background: url('img/content/menu-list/jennifer-schmidt-462962-unsplash_1170px.png') no-repeat center / cover")
+              h4.menu-list__sect-name
+                span tasty
+                <br>
+                | #lunch
+            .menu-list__row
+              .menu-list__col
+                ul.menu-list__list
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+              .menu-list__col
+                ul.menu-list__list
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+          //- menu-list lunch end
+
+          //- menu-list dinner
+          .menu-list__sect.menu-list__breakfast
+            .menu-list__top(style="background: url('img/content/menu-list/brooke-lark-200710-unsplash_1170px.png') no-repeat center / cover")
+              h4.menu-list__sect-name
+                span delicious
+                <br>
+                | #dinner
+            .menu-list__row
+              .menu-list__col
+                ul.menu-list__list
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+              .menu-list__col
+                ul.menu-list__list
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+                  li.menu-list__dish.menu-list-dish
+                    .menu-list-dish__top
+                      h5.menu-list-dish__name Poach eggs and asparagus 
+                      span.menu-list-dish__price $4.49
+                    p.menu-list-dish__comp Eggs, asparagus, bread, toased, buttered
+          //- menu-list dinner end
+
+    .page__footer
+        include modules/_footer

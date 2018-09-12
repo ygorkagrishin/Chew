@@ -15,7 +15,6 @@
   min-height 100vh
   flex-direction column
   justify-content space-between
-  background url('img/content/homepage/annie-spratt-464747-unsplash_1920px.png') no-repeat center / cover
   .container
       text-align center
   &::after
@@ -35,12 +34,13 @@
   color whiteColor
   span 
     font 120px / 110px greatFont 
-    text-transform capitalize
+    text-transform lowercase
     color yellowColor
 
 .page__inf
   padding 30px 50px
-  text-align center
+  &_align_center
+    text-align center
 
 .page__phone
   margin-bottom 12px
@@ -55,6 +55,7 @@
 
 @import '_homepage.styl'
 @import '_team.styl'
+@import '_menu-list.styl'
 
 @import 'components/_header.styl'
 @import 'components/_logo.styl'

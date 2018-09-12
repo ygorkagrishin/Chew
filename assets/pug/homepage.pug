@@ -7,261 +7,262 @@ block scripts
   script(src="jquery.min.js")
 
 block content 
-  .page__hero
-    include modules/_header
+  .page__homepage
+    .page__hero
+      include modules/_header
 
-    .container
-      h1.page__headline
-        span welcome to 
-        <br>
-        | Chew Restaurant 
-      a(href="javascript:void(0);").page__btn.page__btn_type_more.btn.btn_type_more 
-        | Let's explore more 
+      .container
+        h1.page__headline
+          span welcome to 
+          <br>
+          | Chew Restaurant 
+        a(href="javascript:void(0);").page__btn.page__btn_type_more.btn.btn_type_more 
+          | Let's explore more 
 
-    .page__inf.homepage-page__inf
-      p.page__phone Quick Reservation: <span>+212 342 67382</span> 
-      include modules/_social
+      .page__inf
+        p.page__phone Quick Reservation: <span>+212 342 67382</span> 
+        include modules/_social
 
-  main.homepage
-    .container
-      section.sect.homepage__about.homepage-about
-        .homepage-about__inner
+    main.homepage
+      .container
+        section.sect.homepage__about.homepage-about
+          .homepage-about__inner
 
-          .homepage-about__row
-            .homepage-about__col
-              h2.sect__title About us
+            .homepage-about__row
+              .homepage-about__col
+                h2.sect__title About us
 
-              .homepage-about__cont
-                h3.homepage-about__title 
-                  | Where all dreams came true
-                .homepage-about__text
+                .homepage-about__cont
+                  h3.homepage-about__title 
+                    | Where all dreams came true
+                  .homepage-about__text
+                    p
+                      | Morbi mattis, lorem sit amet gravida eleifend, nisl felis tincidunt dui, 
+                      | nec porta turpis ligula eu nisl. Donec lacus dolor, 
+                      | facilisis at tortor ac, congue vulputate ligula. 
+                      | Quisque eleifend volutpat orci nec fermentum. Curabitur quis dignissim nibh. 
+                    p
+                      | Praesent venenatis ultricies erat. 
+                      | Nunc fringilla eros vitae nisl posuere, ut consectetur nulla feugiat. 
+                      | Nullam ut mauris vitae tortor sodales efficitur. 
+                      | Quisque ac orci ante. Proin sit amet turpis lobortis, 
+                      | imperdiet nisi ut, viverra lorem. 
+                    p
+                      | Nullam ex massa, euismod vel metus non, pellentesque tincidunt neque. 
+                      | Mauris suscipit ut purus id congue. Etiam ornare condimentum massa et scelerisque.
+                  a(href="javascript:void(0);").homepage-about__btn.homepage-about__btn_type_more.btn.btn_type_more
+                    | Learn more
+              .homepage-about__col
+                .homepage-about__wrap
+                  .homepage-about__pic
+                      img(src="img/content/homepage/cayla1-150730-unsplash_food.png", alt="pic")
+
+        section.sect.homepage__feat.homepage-feat
+          .homepage-feat__inner
+            .homepage-feat__top
+              h2.sect__title Featured menus
+
+              a(href="javascript:void(0);").homepage-feat__menu-page
+                | View all menus <ion-icon name="arrow-forward"></ion-icon> 
+
+            .homepage-feat__header
+              h3.homepage-feat__title Discover our popular dishes
+              ul.homepage-feat__switch 
+                li
+                  button(type="button") All
+                li
+                  button(type="button").active Breakfast
+                li
+                  button(type="button") Lunch
+                li
+                  button(type="button") Dinner
+                li
+                  button(type="button") Drinks
+
+            .homepage-feat__row
+              .homepage-feat__col
+                ul.homepage-feat__dishes
+                  li.homepage-feat__dish.homepage-dish
+                    .homepage-dish__pic
+                      img(src="img/content/homepage/sharon-chen-352895-unsplash_food.png", style="width: auto", alt="dish pic")
+                    .homepage-dish__desc
+                      .homepage-dish__header
+                        h4.homepage-dish__name
+                          | Poached eggs and asparagus
+                        span.homepage-dish__price
+                          | $4.49 
+                      p.homepage-dish__comp
+                        | Eggs, asparagus, break, toased, buttered
+
+                  li.homepage-feat__dish.homepage-dish
+                    .homepage-dish__pic
+                      img(src="img/content/homepage/christine-siracusa-363257-unsplash_food.png", alt="dish pic")
+                    .homepage-dish__desc
+                      .homepage-dish__header
+                        h4.homepage-dish__name
+                          | Poached eggs and asparagus
+                        span.homepage-dish__price
+                          | $4.49 
+                      p.homepage-dish__comp
+                        | Eggs, asparagus, break, toased, buttered
+                    
+                  li.homepage-feat__dish.homepage-dish
+                    .homepage-dish__pic
+                      img(src="img/content/homepage/edgar-castrejon-459822-unsplash_food.png", alt="dish pic")
+                    .homepage-dish__desc
+                      .homepage-dish__header
+                        h4.homepage-dish__name
+                          | Poached eggs and asparagus
+                        span.homepage-dish__price
+                          | $4.49 
+                      p.homepage-dish__comp
+                        | Eggs, asparagus, break, toased, buttered
+                    
+                  li.homepage-feat__dish.homepage-dish
+                    .homepage-dish__pic
+                      img(src="img/content/homepage/joseph-gonzalez-176749-unsplash_food.png", alt="dish pic")
+                    .homepage-dish__desc
+                      .homepage-dish__header
+                        h4.homepage-dish__name
+                          | Poached eggs and asparagus
+                        span.homepage-dish__price
+                          | $4.49 
+                      p.homepage-dish__comp
+                        | Eggs, asparagus, break, toased, buttered
+                    
+              .homepage-feat__col
+                ul.homepage-feat__dishes
+                  li.homepage-feat__dish.homepage-dish
+                    .homepage-dish__pic
+                      img(src="img/content/homepage/taylor-kiser-373479-unsplash_food.png", alt="dish pic")
+                    .homepage-dish__desc
+                      .homepage-dish__header
+                        h4.homepage-dish__name
+                          | Poached eggs and asparagus
+                        span.homepage-dish__price
+                          | $4.49 
+                      p.homepage-dish__comp
+                        | Eggs, asparagus, break, toased, buttered
+                    
+                  li.homepage-feat__dish.homepage-dish
+                    .homepage-dish__pic
+                      img(src="img/content/homepage/vitchakorn-koonyosying-494170-unsplash_food.png", alt="dish pic")
+                    .homepage-dish__desc
+                      .homepage-dish__header
+                        h4.homepage-dish__name
+                          | Poached eggs and asparagus
+                        span.homepage-dish__price
+                          | $4.49 
+                      p.homepage-dish__comp
+                        | Eggs, asparagus, break, toased, buttered
+                    
+                  li.homepage-feat__dish.homepage-dish
+                    .homepage-dish__pic
+                      img(src="img/content/homepage/vitchakorn-koonyosying-494183-unsplash_food.png", alt="dish pic")
+                    .homepage-dish__desc
+                      .homepage-dish__header
+                        h4.homepage-dish__name
+                          | Poached eggs and asparagus
+                        span.homepage-dish__price
+                          | $4.49 
+                      p.homepage-dish__comp
+                        | Eggs, asparagus, break, toased, buttered
+                    
+                  li.homepage-feat__dish.homepage-dish
+                    .homepage-dish__pic
+                      img(src="img/content/homepage/thomas-tucker-391058-unsplash_food.png", style="width: auto" alt="dish pic")
+                    .homepage-dish__desc
+                      .homepage-dish__header
+                        h4.homepage-dish__name
+                          | Poached eggs and asparagus
+                        span.homepage-dish__price
+                          | $4.49 
+                      p.homepage-dish__comp
+                        | Eggs, asparagus, break, toased, buttered
+                    
+        section.sect.homepage__reserv.homepage-reserv
+          .homepage-reserv__inner
+            h2.sect__title Reservation
+
+            h3.homepage-reserv__title Book a table  
+            .homepage-reserv__reserv
+              .homepage-reserv__row
+                .homepage-reserv__col
+                  p.homepage-reserv__nb
+                    | Welcome to Chew Restaurant! Please use form below
+                    | to book to table online. This is powered by <span>OpenTable.</span>
+
+                  form(action="").homepage-reserv__form.homepage-form#reservation
+                    .homepage-form__rows
+                      .homepage-form__row
+                        .homepage-form__col.homepage-form__col_size_md
+                          label(for="data").homepage-form__label Data
+                          input(type="text", name="data", id="data").homepage-form__input.homepage-form__data
+                        .homepage-form__col.homepage-form__col_size_md
+                          label(for="time").homepage-form__label Time
+                          input(type="text", name="time", id="time").homepage-form__input.homepage-form__time
+                      .homepage-form__row
+                        .homepage-form__col.homepage-form__col_size_lg
+                          label(for="guests").homepage-form__label I want to book a table for
+                          input(type="text", name="guests", id="guests").homepage-form__input.homepage-form__guests
+                    button(type="submit").homepage-form__submit.homepage-form__btn.homepage-form__btn_type_more.btn.btn_type_more
+                      | Book now
+                .homepage-reserv__col
+                  .homepage-reserv__map
+                    .homepage-reserv__pic
+                      img(src="img/content/homepage/location.png", alt="map pic")
+                  
+        section.sect.homepage__blog.homepage-blog
+          .homepage-blog__inner
+            .homepage-blog__top
+              h2.sect__title From our blog
+              a(href="javascript:void(0);").homepage-blog__blog-page
+                | View all blog posts <ion-icon name="arrow-forward"></ion-icon> 
+
+            h3.homepage-blog__title Get our lates news
+            //- #1 row
+            ul.homepage-blog__posts
+              li.homepage-blog__post.homepage-post
+                .homepage-post__pic
+                  img(src="img/content/homepage/mariana-medvedeva-379652-unsplash_blog.png", alt="blog pic")
+                span.homepage-post__date Jul 9th, 2018
+                h4.homepage-post__name How to eat healthy with organic foods 
+                .homepage-post__text
                   p
-                    | Morbi mattis, lorem sit amet gravida eleifend, nisl felis tincidunt dui, 
+                    | Morbi mattis, lorem sit amet gravida eleifend, 
+                    | nisl felis tincidunt dui, 
                     | nec porta turpis ligula eu nisl. Donec lacus dolor, 
-                    | facilisis at tortor ac, congue vulputate ligula. 
-                    | Quisque eleifend volutpat orci nec fermentum. Curabitur quis dignissim nibh. 
+                    | facilisis at tortor ac, congue vulputate ligula.
+                a(href="javascript:void(0);").homepage-post__continue 
+                  | Continue Reading <ion-icon name="arrow-forward"></ion-icon>
+
+              li.homepage-blog__post.homepage-post
+                .homepage-post__pic
+                  img(src="img/content/homepage/monika-grabkowska-648019-unsplash_blog.png", alt="blog pic")
+                span.homepage-post__date Jul 9th, 2018
+                h4.homepage-post__name How to eat healthy with organic foods 
+                .homepage-post__text
                   p
-                    | Praesent venenatis ultricies erat. 
-                    | Nunc fringilla eros vitae nisl posuere, ut consectetur nulla feugiat. 
-                    | Nullam ut mauris vitae tortor sodales efficitur. 
-                    | Quisque ac orci ante. Proin sit amet turpis lobortis, 
-                    | imperdiet nisi ut, viverra lorem. 
+                    | Morbi mattis, lorem sit amet gravida eleifend, 
+                    | nisl felis tincidunt dui, 
+                    | nec porta turpis ligula eu nisl. Donec lacus dolor, 
+                    | facilisis at tortor ac, congue vulputate ligula.
+                a(href="javascript:void(0);").homepage-post__continue 
+                  | Continue Reading <ion-icon name="arrow-forward"></ion-icon>
+
+              li.homepage-blog__post.homepage-post
+                .homepage-post__pic
+                  img(src="img/content/homepage/monika-grabkowska-663033-unsplash_blog.png", alt="blog pic")
+                span.homepage-post__date Jul 9th, 2018
+                h4.homepage-post__name How to eat healthy with organic foods 
+                .homepage-post__text
                   p
-                    | Nullam ex massa, euismod vel metus non, pellentesque tincidunt neque. 
-                    | Mauris suscipit ut purus id congue. Etiam ornare condimentum massa et scelerisque.
-                a(href="javascript:void(0);").homepage-about__btn.homepage-about__btn_type_more.btn.btn_type_more
-                  | Learn more
-            .homepage-about__col
-              .homepage-about__wrap
-                .homepage-about__pic
-                    img(src="img/content/homepage/cayla1-150730-unsplash_food.png", alt="pic")
-
-      section.sect.homepage__feat.homepage-feat
-        .homepage-feat__inner
-          .homepage-feat__top
-            h2.sect__title Featured menus
-
-            a(href="javascript:void(0);").homepage-feat__menu-page
-              | View all menus <ion-icon name="arrow-forward"></ion-icon> 
-
-          .homepage-feat__header
-            h3.homepage-feat__title Discover our popular dishes
-            ul.homepage-feat__switch 
-              li
-                button(type="button") All
-              li
-                button(type="button").active Breakfast
-              li
-                button(type="button") Lunch
-              li
-                button(type="button") Dinner
-              li
-                button(type="button") Drinks
-
-          .homepage-feat__row
-            .homepage-feat__col
-              ul.homepage-feat__dishes
-                li.homepage-feat__dish.homepage-dish
-                  .homepage-dish__pic
-                    img(src="img/content/homepage/sharon-chen-352895-unsplash_food.png", style="width: auto", alt="dish pic")
-                  .homepage-dish__desc
-                    .homepage-dish__header
-                      h4.homepage-dish__name
-                        | Poached eggs and asparagus
-                      span.homepage-dish__price
-                        | $4.49 
-                    p.homepage-dish__comp
-                      | Eggs, asparagus, break, toased, buttered
-
-                li.homepage-feat__dish.homepage-dish
-                  .homepage-dish__pic
-                    img(src="img/content/homepage/christine-siracusa-363257-unsplash_food.png", alt="dish pic")
-                  .homepage-dish__desc
-                    .homepage-dish__header
-                      h4.homepage-dish__name
-                        | Poached eggs and asparagus
-                      span.homepage-dish__price
-                        | $4.49 
-                    p.homepage-dish__comp
-                      | Eggs, asparagus, break, toased, buttered
-                  
-                li.homepage-feat__dish.homepage-dish
-                  .homepage-dish__pic
-                    img(src="img/content/homepage/edgar-castrejon-459822-unsplash_food.png", alt="dish pic")
-                  .homepage-dish__desc
-                    .homepage-dish__header
-                      h4.homepage-dish__name
-                        | Poached eggs and asparagus
-                      span.homepage-dish__price
-                        | $4.49 
-                    p.homepage-dish__comp
-                      | Eggs, asparagus, break, toased, buttered
-                  
-                li.homepage-feat__dish.homepage-dish
-                  .homepage-dish__pic
-                    img(src="img/content/homepage/joseph-gonzalez-176749-unsplash_food.png", alt="dish pic")
-                  .homepage-dish__desc
-                    .homepage-dish__header
-                      h4.homepage-dish__name
-                        | Poached eggs and asparagus
-                      span.homepage-dish__price
-                        | $4.49 
-                    p.homepage-dish__comp
-                      | Eggs, asparagus, break, toased, buttered
-                  
-            .homepage-feat__col
-              ul.homepage-feat__dishes
-                li.homepage-feat__dish.homepage-dish
-                  .homepage-dish__pic
-                    img(src="img/content/homepage/taylor-kiser-373479-unsplash_food.png", alt="dish pic")
-                  .homepage-dish__desc
-                    .homepage-dish__header
-                      h4.homepage-dish__name
-                        | Poached eggs and asparagus
-                      span.homepage-dish__price
-                        | $4.49 
-                    p.homepage-dish__comp
-                      | Eggs, asparagus, break, toased, buttered
-                  
-                li.homepage-feat__dish.homepage-dish
-                  .homepage-dish__pic
-                    img(src="img/content/homepage/vitchakorn-koonyosying-494170-unsplash_food.png", alt="dish pic")
-                  .homepage-dish__desc
-                    .homepage-dish__header
-                      h4.homepage-dish__name
-                        | Poached eggs and asparagus
-                      span.homepage-dish__price
-                        | $4.49 
-                    p.homepage-dish__comp
-                      | Eggs, asparagus, break, toased, buttered
-                  
-                li.homepage-feat__dish.homepage-dish
-                  .homepage-dish__pic
-                    img(src="img/content/homepage/vitchakorn-koonyosying-494183-unsplash_food.png", alt="dish pic")
-                  .homepage-dish__desc
-                    .homepage-dish__header
-                      h4.homepage-dish__name
-                        | Poached eggs and asparagus
-                      span.homepage-dish__price
-                        | $4.49 
-                    p.homepage-dish__comp
-                      | Eggs, asparagus, break, toased, buttered
-                  
-                li.homepage-feat__dish.homepage-dish
-                  .homepage-dish__pic
-                    img(src="img/content/homepage/thomas-tucker-391058-unsplash_food.png", style="width: auto" alt="dish pic")
-                  .homepage-dish__desc
-                    .homepage-dish__header
-                      h4.homepage-dish__name
-                        | Poached eggs and asparagus
-                      span.homepage-dish__price
-                        | $4.49 
-                    p.homepage-dish__comp
-                      | Eggs, asparagus, break, toased, buttered
-                  
-      section.sect.homepage__reserv.homepage-reserv
-        .homepage-reserv__inner
-          h2.sect__title Reservation
-
-          h3.homepage-reserv__title Book a table  
-          .homepage-reserv__reserv
-            .homepage-reserv__row
-              .homepage-reserv__col
-                p.homepage-reserv__nb
-                  | Welcome to Chew Restaurant! Please use form below
-                  | to book to table online. This is powered by <span>OpenTable.</span>
-
-                form(action="").homepage-reserv__form.homepage-form#reservation
-                  .homepage-form__rows
-                    .homepage-form__row
-                      .homepage-form__col.homepage-form__col_size_md
-                        label(for="data").homepage-form__label Data
-                        input(type="text", name="data", id="data").homepage-form__input.homepage-form__data
-                      .homepage-form__col.homepage-form__col_size_md
-                        label(for="time").homepage-form__label Time
-                        input(type="text", name="time", id="time").homepage-form__input.homepage-form__time
-                    .homepage-form__row
-                      .homepage-form__col.homepage-form__col_size_lg
-                        label(for="guests").homepage-form__label I want to book a table for
-                        input(type="text", name="guests", id="guests").homepage-form__input.homepage-form__guests
-                  button(type="submit").homepage-form__submit.homepage-form__btn.homepage-form__btn_type_more.btn.btn_type_more
-                    | Book now
-              .homepage-reserv__col
-                .homepage-reserv__map
-                  .homepage-reserv__pic
-                    img(src="img/content/homepage/location.png", alt="map pic")
-                
-      section.sect.homepage__blog.homepage-blog
-        .homepage-blog__inner
-          .homepage-blog__top
-            h2.sect__title From our blog
-            a(href="javascript:void(0);").homepage-blog__blog-page
-              | View all blog posts <ion-icon name="arrow-forward"></ion-icon> 
-
-          h3.homepage-blog__title Get our lates news
-          //- #1 row
-          ul.homepage-blog__posts
-            li.homepage-blog__post.homepage-post
-              .homepage-post__pic
-                img(src="img/content/homepage/mariana-medvedeva-379652-unsplash_blog.png", alt="blog pic")
-              span.homepage-post__date Jul 9th, 2018
-              h4.homepage-post__name How to eat healthy with organic foods 
-              .homepage-post__text
-                p
-                  | Morbi mattis, lorem sit amet gravida eleifend, 
-                  | nisl felis tincidunt dui, 
-                  | nec porta turpis ligula eu nisl. Donec lacus dolor, 
-                  | facilisis at tortor ac, congue vulputate ligula.
-              a(href="javascript:void(0);").homepage-post__continue 
-                | Continue Reading <ion-icon name="arrow-forward"></ion-icon>
-
-            li.homepage-blog__post.homepage-post
-              .homepage-post__pic
-                img(src="img/content/homepage/monika-grabkowska-648019-unsplash_blog.png", alt="blog pic")
-              span.homepage-post__date Jul 9th, 2018
-              h4.homepage-post__name How to eat healthy with organic foods 
-              .homepage-post__text
-                p
-                  | Morbi mattis, lorem sit amet gravida eleifend, 
-                  | nisl felis tincidunt dui, 
-                  | nec porta turpis ligula eu nisl. Donec lacus dolor, 
-                  | facilisis at tortor ac, congue vulputate ligula.
-              a(href="javascript:void(0);").homepage-post__continue 
-                | Continue Reading <ion-icon name="arrow-forward"></ion-icon>
-
-            li.homepage-blog__post.homepage-post
-              .homepage-post__pic
-                img(src="img/content/homepage/monika-grabkowska-663033-unsplash_blog.png", alt="blog pic")
-              span.homepage-post__date Jul 9th, 2018
-              h4.homepage-post__name How to eat healthy with organic foods 
-              .homepage-post__text
-                p
-                  | Morbi mattis, lorem sit amet gravida eleifend, 
-                  | nisl felis tincidunt dui, 
-                  | nec porta turpis ligula eu nisl. Donec lacus dolor, 
-                  | facilisis at tortor ac, congue vulputate ligula.
-              a(href="javascript:void(0);").homepage-post__continue 
-                | Continue Reading <ion-icon name="arrow-forward"></ion-icon>
-          //- #1 row end
-
-  include modules/_footer
+                    | Morbi mattis, lorem sit amet gravida eleifend, 
+                    | nisl felis tincidunt dui, 
+                    | nec porta turpis ligula eu nisl. Donec lacus dolor, 
+                    | facilisis at tortor ac, congue vulputate ligula.
+                a(href="javascript:void(0);").homepage-post__continue 
+                  | Continue Reading <ion-icon name="arrow-forward"></ion-icon>
+            //- #1 row end
+    .page__footer
+      include modules/_footer
