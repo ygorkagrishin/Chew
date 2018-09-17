@@ -316,18 +316,18 @@ h6 {
   color: #fff;
   border-radius: 25px;
 }
-.btn_type_reservation {
+.btn_type_transparent {
   height: 40px;
   padding: 0 32px;
   line-height: 40px;
   letter-spacing: 0.5px;
   border: 2px solid #fff;
 }
-.btn_type_reservation:hover {
+.btn_type_transparent:hover {
   color: #efba39;
   border-color: #efba39;
 }
-.btn_type_more {
+.btn_type_orange {
   height: 50px;
   padding: 0 52px;
   line-height: 54px;
@@ -393,11 +393,14 @@ h6 {
   margin-left: 6px;
   color: #efba39;
 }
+.page__main {
+  padding: 150px 0 142px 0;
+}
 .page__homepage .page__hero {
   background: url("img/content/homepage/annie-spratt-464747-unsplash_1920px.png") no-repeat center/cover;
 }
-.homepage-about__inner {
-  padding: 150px 0;
+.homepage-about {
+  margin-bottom: 150px;
 }
 .homepage-about__row {
   display: -webkit-box;
@@ -415,7 +418,7 @@ h6 {
   margin-bottom: 20px;
 }
 .homepage-about__text {
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 }
 .homepage-about__btn_type_more {
   height: 42px;
@@ -465,8 +468,8 @@ h6 {
   left: 0;
   width: 100%;
 }
-.homepage-feat__inner {
-  padding: 30px 0 150px 0;
+.homepage-feat {
+  margin-bottom: 148px;
 }
 .homepage-feat__top,
 .homepage-blog__top {
@@ -602,7 +605,8 @@ h6 {
 .homepage-dish__comp {
   font-size: 14px;
 }
-.homepage-reserv__inner {
+.homepage-reserv {
+  margin-bottom: 150px;
   padding-bottom: 66px;
 }
 .homepage-reserv__title {
@@ -644,20 +648,15 @@ h6 {
   padding-right: 54px;
 }
 .homepage-form__rows {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 .homepage-form__row {
-  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .homepage-form__row:not(:last-child) {
-  margin-bottom: 34px;
-}
-@supports (display: flex) {
-  .homepage-form__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+  margin-bottom: 30px;
 }
 .homepage-form__col {
   float: left;
@@ -721,9 +720,6 @@ h6 {
 .homepage-blog__blog-page [name="arrow-forward"] {
   vertical-align: -3px;
 }
-.homepage-blog__inner {
-  padding: 150px 0 143px 0;
-}
 .homepage-blog__title {
   margin-bottom: 32px;
 }
@@ -776,9 +772,6 @@ h6 {
 }
 .page__team .page__hero {
   background: #797979 url("img/content/team/joshua-rodriguez-422768-unsplash_1920px.png") no-repeat top/cover;
-}
-.team {
-  padding: 150px 0;
 }
 .team .sect__title {
   text-align: center;
@@ -899,9 +892,6 @@ h6 {
 .page__menu-list .page__hero {
   background: #797979 url("img/content/menu-list/avi-richards-719272-unsplash_1920px.png") no-repeat 50% 50%/cover;
 }
-.menu-list {
-  padding: 150px 0;
-}
 .menu-list .sect__title {
   text-align: center;
 }
@@ -967,6 +957,95 @@ h6 {
 }
 .page__menu-list .page__footer {
   background: #797979 url("img/content/menu-list/avi-richards-719272-unsplash_1920px.png") no-repeat center/cover;
+}
+.page__cont .page__hero {
+  background: #797979 url("img/content/contact/rob-bye-141857-unsplash_1920px.png") no-repeat center/cover;
+}
+.cont {
+  padding: 0;
+}
+.cont .sect__title {
+  text-align: center;
+}
+.cont-inf {
+  padding: 40px 0;
+  background-color: #000;
+}
+.cont-inf__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cont-inf__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+}
+.cont-inf__text-container {
+  color: #fff;
+}
+.cont__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 150px 0 150px 0;
+}
+.cont__header {
+  margin-bottom: 42px;
+  text-align: center;
+}
+.cont__main-title {
+  margin-bottom: 22px;
+}
+.cont-form__rows {
+  margin-bottom: 14px;
+}
+.cont-form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.cont-form__row:not(:last-child) {
+  margin-bottom: 30px;
+}
+.cont-form__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.cont-form__col:not(:last-child) {
+  margin-right: 30px;
+}
+.cont-form__label {
+  display: block;
+  margin-bottom: 14px;
+  font: 14px/1 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
+  color: #000;
+}
+.cont-form__input {
+  width: 100%;
+  padding: 5px 20px;
+  border: 1px solid #797979;
+}
+.cont-form__btn-container {
+  text-align: center;
+}
+.cont-form__btn-submit {
+  height: 42px;
+  padding: 0 34px;
+  line-height: 46px;
+}
+.page__cont .page__footer {
+  background: #797979 url("img/content/contact/rob-bye-141857-unsplash_1920px.png") no-repeat bottom/cover;
 }
 header {
   display: -webkit-box;

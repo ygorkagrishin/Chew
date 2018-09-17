@@ -1,0 +1,85 @@
+extends layout/_layout
+
+block title
+  title Chew
+
+block scripts
+  script(src="jquery.min.js")
+  script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU", type="text/javascript")
+
+block content
+  .page__cont
+    .page__hero
+      include modules/_header
+
+      .container
+        h1.page__headline
+          span let's
+          <br>
+          | contact us
+
+      .page__inf.page__inf_align_center
+        p.page__phone Quick Reservation: <span>+212 342 67382</span> 
+        include modules/_social
+
+    main.page__main.cont
+
+      //- cont info about us
+      .cont__inf.cont-inf
+        .container
+          ul.cont-inf__list
+            li.cont-inf__item.cont-inf__address
+              .cont-inf__pic
+
+              .cont-inf__text-container
+                p
+                  | 16/8 W 19th St, Chelsea
+                  | Manhattan, NY 10001
+            li.cont-inf__item.cont-inf__phone
+              .cont-inf__pic
+
+              .cont-inf__text-container
+                p
+                  | 212-342-67382
+            li.cont-inf__item.cont-inf__email
+              .cont-inf__pic
+
+              .cont-inf__text-container
+                p
+                  | reservation@chew.com
+                  | info@chew.com
+      //- cont info about us end
+
+      //- cont map yandex api
+      .cont__map-container
+        .cont__map#map
+      //- cont map yandex api end
+
+      .container.cont__container
+        h2.cont__title.sect__title contact form
+
+        .cont__header
+          h3.cont__main-title Drop us a line
+          p
+            | Vivamus consequat, felis at aliquam elementum, massa sem dignissim elit, 
+            | sit amet cursus massa tortor eget ante. 
+            | Donec condimentum id erat a molestie. In luctus quis risus cursus faucibus.
+
+        form(action="").cont__form.cont-form
+          .cont-form__rows
+            .cont-form__row.cont-form__user-inf-container
+              .cont-form__col.cont-form__col_size_md
+                label(for="#cont-form-name").cont-form__label Your name*
+                input(type="text", name="name", placeholder="Enter your name")#cont-form-name.cont-form__input
+              .cont-form__col.cont-form__col_size_md
+                label(for="#cont-form-email").cont-form__label Your email*
+                input(type="text", name="email", placeholder="Enter your email").cont-form__input#cont-form-email
+            .cont-form__row.cont-form__message-container
+              .cont-form__col.cont-form__col_size_lg
+                label(for="#cont-form-message").cont-form__label Your message*
+                textarea(name="message", rows="4", placeholder="Your message goes here").cont-form__input.cont-form__textarea#cont-form-message
+          .cont-form__btn-container
+            button(type="submit").cont-form__btn-submit.btn.btn_type_orange Send us
+
+    .page__footer
+      include modules/_footer

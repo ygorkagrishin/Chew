@@ -122,7 +122,10 @@ gulp.task('js:copy', () => {
 
 // Собираем скрипты
 gulp.task('js:build', () => {
-  return gulp.src(paths.scripts.src + '/*.js')
+  return gulp.src([
+    paths.scripts.src + '/map-api.js',
+    paths.scripts.src + '/test.js'
+  ])
   .pipe(plumber({
     errorHandler: err => {
       notify.onError({

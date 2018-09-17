@@ -2,8 +2,8 @@
   .page__hero
     background url('img/content/homepage/annie-spratt-464747-unsplash_1920px.png') no-repeat center / cover
 
-.homepage-about__inner
-  padding 150px 0
+.homepage-about
+  margin-bottom 150px
 
 .homepage-about__row
   display flex
@@ -19,7 +19,7 @@
   margin-bottom 20px
 
 .homepage-about__text
-  margin-bottom 31px
+  margin-bottom 32px
 
 .homepage-about__btn
   &_type_more
@@ -68,8 +68,8 @@
 
 // Feature
 
-.homepage-feat__inner
-  padding 30px 0 150px 0
+.homepage-feat
+  margin-bottom 148px
 
 .homepage-feat__top
   display flex
@@ -171,8 +171,8 @@
   font-size 14px
 
 // Form
-
-.homepage-reserv__inner
+.homepage-reserv
+  margin-bottom 150px
   padding-bottom 66px
 
 .homepage-reserv__title
@@ -208,14 +208,12 @@
     padding-right 54px
 
 .homepage-form__rows
-  margin-bottom 30px
+  margin-bottom 31px
 
 .homepage-form__row
-  clear both
+  display flex
   &:not(:last-child)
-    margin-bottom 34px
-  @supports(display flex)
-    display flex
+    margin-bottom 30px
 
 .homepage-form__col
   float left
@@ -265,7 +263,6 @@
     height 100%
 
 // Blog
-
 .homepage-blog__top
   @extend .homepage-feat__top
   .sect__title
@@ -275,9 +272,6 @@
   @extend .homepage-feat__menu-page
   [name="arrow-forward"]
     vertical-align -3px
-
-.homepage-blog__inner
-  padding 150px 0 143px 0
 
 .homepage-blog__title
   margin-bottom 32px

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Chew</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body class="page">
+    <div class="page__cont">
+      <div class="page__hero">
+        <header>
+          <div class="header__logo">
+            <div class="logo">
+              <h2>Chew</h2>
+              <p>restaurant</p>
+            </div>
+          </div>
+          <nav class="nav">
+            <ul>
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="menu-list.html">Menus</a></li>
+              <li><a href="javascript:void(0);">Reservation</a></li>
+              <li><a href="javascript:void(0);">Gallery</a></li>
+              <li><a href="javascript:void(0);">Blog</a></li>
+              <li><a href="javascript:void(0);">Pages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav><a class="header__btn header__btn_type_transparent btn btn_type_transparent" href="javascript:void(0);">
+             Make a reservation</a>
+        </header>
+        <div class="container">
+          <h1 class="page__headline"><span>let's</span><br>contact us</h1>
+        </div>
+        <div class="page__inf page__inf_align_center">
+          <p class="page__phone">Quick Reservation: <span>+212 342 67382</span> </p>
+          <ul class="social">
+            <li><a href="javascript:void(0);">
+                <ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="javascript:void(0);">
+                <ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="javascript:void(0);">
+                <ion-icon name="logo-foursquare"></ion-icon></a></li>
+          </ul>
+        </div>
+      </div>
+      <main class="page__main cont">
+        <div class="cont__inf cont-inf">
+          <div class="container">
+            <ul class="cont-inf__list">
+              <li class="cont-inf__item cont-inf__address">
+                <div class="cont-inf__pic"></div>
+                <div class="cont-inf__text-container">
+                  <p>
+                    16/8 W 19th St, Chelsea
+                    Manhattan, NY 10001
+                  </p>
+                </div>
+              </li>
+              <li class="cont-inf__item cont-inf__phone">
+                <div class="cont-inf__pic"></div>
+                <div class="cont-inf__text-container">
+                  <p>212-342-67382</p>
+                </div>
+              </li>
+              <li class="cont-inf__item cont-inf__email">
+                <div class="cont-inf__pic"></div>
+                <div class="cont-inf__text-container">
+                  <p>
+                    reservation@chew.com
+                    info@chew.com
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cont__map-container">
+          <div class="cont__map" id="map"></div>
+        </div>
+        <div class="container cont__container">
+          <h2 class="cont__title sect__title">contact form</h2>
+          <div class="cont__header">
+            <h3 class="cont__main-title">Drop us a line</h3>
+            <p>
+              Vivamus consequat, felis at aliquam elementum, massa sem dignissim elit, 
+              sit amet cursus massa tortor eget ante. 
+              Donec condimentum id erat a molestie. In luctus quis risus cursus faucibus.
+            </p>
+          </div>
+          <form class="cont__form cont-form" action="">
+            <div class="cont-form__rows">
+              <div class="cont-form__row cont-form__user-inf-container">
+                <div class="cont-form__col cont-form__col_size_md">
+                  <label class="cont-form__label" for="#cont-form-name">Your name*</label>
+                  <input class="cont-form__input" type="text" name="name" placeholder="Enter your name" id="cont-form-name">
+                </div>
+                <div class="cont-form__col cont-form__col_size_md">
+                  <label class="cont-form__label" for="#cont-form-email">Your email*</label>
+                  <input class="cont-form__input" type="text" name="email" placeholder="Enter your email" id="cont-form-email">
+                </div>
+              </div>
+              <div class="cont-form__row cont-form__message-container">
+                <div class="cont-form__col cont-form__col_size_lg">
+                  <label class="cont-form__label" for="#cont-form-message">Your message*</label>
+                  <textarea class="cont-form__input cont-form__textarea" name="message" rows="4" placeholder="Your message goes here" id="cont-form-message"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="cont-form__btn-container">
+              <button class="cont-form__btn-submit btn btn_type_orange" type="submit">Send us</button>
+            </div>
+          </form>
+        </div>
+      </main>
+      <div class="page__footer">
+        <footer>
+          <div class="logo">
+            <h2>Chew</h2>
+            <p>restaurant</p>
+          </div>
+          <div class="footer__row">
+            <div class="footer__col">
+              <h6 class="footer__name">Address</h6>
+              <ul class="footer__address">
+                <li>16/8 W 19th St, Chelsea</li>
+                <li>Manhattan, NY 10001</li>
+              </ul>
+            </div>
+            <div class="footer__col"> 
+              <h6 class="footer__name">Open Time</h6>
+              <ul class="footer__open-time">
+                <li>Mon-Fri: 8:00 - 22:00</li>
+                <li>Sat-Sun: 9:00 - 21:00</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h6 class="footer__name">Phone</h6>
+              <ul class="footer__phone">
+                <li>212-342-67382</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h6 class="footer__name">Email</h6>
+              <ul class="footer__email">
+                <li>reservation@chew.com</li>
+                <li>info@chew.com</li>
+              </ul>
+            </div>
+          </div>
+          <ul class="social">
+            <li><a href="javascript:void(0);">
+                <ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="javascript:void(0);">
+                <ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="javascript:void(0);">
+                <ion-icon name="logo-foursquare"></ion-icon></a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+    <script src="common.min.js"></script>
+  </body>
+</html>
