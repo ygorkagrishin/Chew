@@ -241,7 +241,7 @@ select::-ms-expand {
   opacity: 0;
 }
 svg {
-  display: block;
+  display: inline-block;
   width: 100%;
   height: 100%;
 }
@@ -843,10 +843,6 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.team-pagination__btn {
-  line-height: 44px;
-  text-align: center;
-}
 .team-pagination__pages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -883,8 +879,18 @@ h6 {
 .team-pagination__btn {
   width: 40px;
   height: 40px;
+  line-height: 48px;
+  text-align: center;
   border: 1px solid #797979;
   border-radius: 50%;
+}
+.team-pagination__btn svg {
+  width: 47% !important;
+  height: 47% !important;
+  fill: #797979;
+}
+.team-pagination__btn:hover svg {
+  fill: #000;
 }
 .page__team .page__footer {
   background: #797979 url("img/content/team/joshua-rodriguez-422768-unsplash_1920px.png") no-repeat bottom/cover;
@@ -993,8 +999,19 @@ h6 {
 .cont-inf__text-container {
   color: #fff;
 }
+.cont__map-container {
+  position: relative;
+  height: 88vh;
+}
+.cont__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .cont__container {
-  max-width: 800px;
+  max-width: 770px;
   margin: 0 auto;
   padding: 150px 0 150px 0;
 }
@@ -1108,12 +1125,19 @@ header {
   height: 30px;
   text-align: center;
   line-height: 36px;
-  color: #fff;
   background-color: #797979;
   border-radius: 50%;
 }
+.social a svg {
+  width: 47% !important;
+  height: 47% !important;
+  fill: #fff;
+}
 .social a:hover {
   background-color: #efba39;
+}
+.social a:hover svg {
+  fill: #000;
 }
 footer {
   position: relative;

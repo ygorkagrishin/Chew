@@ -59,9 +59,6 @@
   display flex
   align-items center
   justify-content center
-  &__btn
-    line-height 44px
-    text-align center
 
 .team-pagination__pages
   display flex
@@ -89,8 +86,17 @@
 .team-pagination__btn
   width 40px 
   height 40px
+  line-height 48px
+  text-align center
   border 1px solid greyColor 
   border-radius 50%
+  svg 
+    width 47% !important
+    height 47% !important
+    fill greyColor
+  &:hover
+    svg 
+      fill blackColor
 
 .page__team
   .page__footer
