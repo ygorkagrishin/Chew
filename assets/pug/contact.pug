@@ -27,23 +27,29 @@ block content
       //- cont info about us
       .cont__inf.cont-inf
         .container
-          ul.cont-inf__list
-            li.cont-inf__item.cont-inf__address
-              .cont-inf__pic
-
+          .cont-inf__row
+            .cont-inf__col.cont-inf__address
+              .cont-inf__pic-wrap
+                .cont-inf__pic
+                  svg
+                    use(xlink:href="sprite-svg.svg#_ionicons_svg_ios-pin")
               .cont-inf__text-container
                 p
                   | 16/8 W 19th St, Chelsea
                   | Manhattan, NY 10001
-            li.cont-inf__item.cont-inf__phone
-              .cont-inf__pic
-
+            .cont-inf__col.cont-inf__phone
+              .cont-inf__pic-wrap
+                .cont-inf__pic
+                  svg
+                    use(xlink:href="sprite-svg.svg#_ionicons_svg_ios-call")
               .cont-inf__text-container
                 p
                   | 212-342-67382
-            li.cont-inf__item.cont-inf__email
-              .cont-inf__pic
-
+            .cont-inf__col.cont-inf__email
+              .cont-inf__pic-wrap
+                .cont-inf__pic
+                  svg
+                    use(xlink:href="sprite-svg.svg#_ionicons_svg_ios-mail")
               .cont-inf__text-container
                 p
                   | reservation@chew.com
@@ -51,8 +57,15 @@ block content
       //- cont info about us end
 
       //- cont map yandex api
-      .cont__map-container
-        .cont__map#map
+      .cont__map.cont-map
+        .cont-map__container
+          .cont-map__map#map
+          .cont-map__modal
+            .cont-map__name
+              | chew.
+            p.cont-map__address 
+             | No. 16/8 W 47th St <br> Manhattan, New York, NY 10001
+            span.cont-map__phone 212-342-67382
       //- cont map yandex api end
 
       .container.cont__container

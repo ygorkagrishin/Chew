@@ -11,34 +11,95 @@
   padding 40px 0
   background-color #000
 
-.cont-inf__list
-  display flex
-  padding 0 100px
-  justify-content space-between
-
-.cont-inf__item
+.cont-inf__row   
   display flex
   align-items center
+  justify-content space-between
+
+  padding 0 70px
+
+.cont-inf__col
+  display flex
+  align-items center
+
   flex-basis 200px
 
+.cont-inf__pic
+  width 70px
+  height 70px
+  text-align center
+  svg
+    width 60% !important  
+    fill whiteColor
+
 .cont-inf__text-container
+  font-size 11.7px
   color whiteColor
-
-.cont__map-container
-  position relative
-  height 88vh
-
-.cont__map
-  position absolute
-  top 0
-  left 0
-  width 100%
-  height 100%
 
 .cont__container
   max-width 770px
   margin 0 auto
-  padding 150px 0 150px 0
+  padding 150px 0
+
+.cont-map__container
+  position relative
+
+  height 88vh
+  &::after
+    content ''
+    position absolute
+    top 0
+    left 0
+    z-index $z-index7
+    display block
+    width 100%
+    height 100%
+    background-color rgba(blackColor,.3)
+
+.cont-map__map
+  position absolute
+  top 0
+  left 0
+  z-index $z-index6
+  width 100%
+  height 100%
+
+.cont-map__modal
+  position absolute
+  top 35%
+  left 35%
+  z-index $z-index8
+
+  width 270px
+  height 172px
+  padding 29px 28px 32px 28px
+  
+  text-align center
+  color blackColor
+
+  background-color whiteColor 
+  border-radius 5px
+
+  &::after
+    content ''
+    position absolute 
+    left 44%
+    bottom -2%
+    z-index -1
+
+    display block
+    width 32px
+    height 32px
+
+    background-color inherit
+    transform rotate(-45deg)
+
+.cont-map__name
+  margin-bottom 12px
+  font 36px / 1 baseFont2
+
+.cont-map__phone
+  color blueColor
 
 .cont__header
   margin-bottom 42px

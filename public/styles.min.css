@@ -275,32 +275,32 @@ body {
   padding: 0 15px;
 }
 h1 {
-  font: 48px/1 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h2 {
-  font: 48px/1 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h3 {
-  font: 48px/1 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h4 {
-  font: 48px/1 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h5 {
-  font: 48px/1 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h6 {
-  font: 48px/1 'antonio-regular', sans-serif, arial;
+  font: 48px/1 'antonio-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
@@ -311,7 +311,7 @@ h6 {
 }
 .btn {
   display: inline-block;
-  font: 14px 'antonio-regular', sans-serif, arial;
+  font: 14px 'antonio-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #fff;
   border-radius: 25px;
@@ -383,7 +383,7 @@ h6 {
 }
 .page__phone {
   margin-bottom: 12px;
-  font: 14px/1 'antonio-regular', sans-serif, arial;
+  font: 14px/1 'antonio-bold', sans-serif, arial;
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #fff;
@@ -600,7 +600,7 @@ h6 {
   text-transform: initial;
 }
 .homepage-dish__price {
-  font: 14px/1 'antonio-regular', sans-serif, arial;
+  font: 14px/1 'antonio-bold', sans-serif, arial;
 }
 .homepage-dish__comp {
   font-size: 14px;
@@ -685,7 +685,7 @@ h6 {
 .homepage-form__label {
   display: block;
   margin-bottom: 10px;
-  font: 14px/1 'antonio-regular', sans-serif, arial;
+  font: 14px/1 'antonio-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #fff;
 }
@@ -758,7 +758,7 @@ h6 {
   margin-bottom: 26px;
 }
 .homepage-post__continue {
-  font: 14px/1 'antonio-regular', sans-serif, arial;
+  font: 14px/1 'antonio-bold', sans-serif, arial;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #000;
@@ -864,7 +864,7 @@ h6 {
   display: block;
   width: 40px;
   height: 40px;
-  font: 14px/41px 'antonio-regular', sans-serif, arial;
+  font: 14px/41px 'antonio-bold', sans-serif, arial;
   border: 1px solid #797979;
   border-radius: 50%;
 }
@@ -959,7 +959,7 @@ h6 {
   line-height: 1;
 }
 .menu-list-dish__price {
-  font: 18px/1 'antonio-regular', sans-serif, arial;
+  font: 18px/1 'antonio-bold', sans-serif, arial;
 }
 .page__menu-list .page__footer {
   background: #797979 url("img/content/menu-list/avi-richards-719272-unsplash_1920px.png") no-repeat center/cover;
@@ -977,16 +977,19 @@ h6 {
   padding: 40px 0;
   background-color: #000;
 }
-.cont-inf__list {
+.cont-inf__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 70px;
 }
-.cont-inf__item {
+.cont-inf__col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -996,24 +999,79 @@ h6 {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
 }
+.cont-inf__pic {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+.cont-inf__pic svg {
+  width: 60% !important;
+  fill: #fff;
+}
 .cont-inf__text-container {
+  font-size: 11.7px;
   color: #fff;
-}
-.cont__map-container {
-  position: relative;
-  height: 88vh;
-}
-.cont__map {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 .cont__container {
   max-width: 770px;
   margin: 0 auto;
-  padding: 150px 0 150px 0;
+  padding: 150px 0;
+}
+.cont-map__container {
+  position: relative;
+  height: 88vh;
+}
+.cont-map__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7777777;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+.cont-map__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 666666;
+  width: 100%;
+  height: 100%;
+}
+.cont-map__modal {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  z-index: 88888888;
+  width: 270px;
+  height: 172px;
+  padding: 29px 28px 32px 28px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.cont-map__modal::after {
+  content: '';
+  position: absolute;
+  left: 44%;
+  bottom: -2%;
+  z-index: -1;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: inherit;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.cont-map__name {
+  margin-bottom: 12px;
+  font: 36px/1 'antonio-bold', sans-serif, arial;
+}
+.cont-map__phone {
+  color: #2b9ddf;
 }
 .cont__header {
   margin-bottom: 42px;
@@ -1044,7 +1102,7 @@ h6 {
 .cont-form__label {
   display: block;
   margin-bottom: 14px;
-  font: 14px/1 'antonio-regular', sans-serif, arial;
+  font: 14px/1 'antonio-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
@@ -1090,7 +1148,7 @@ header {
   color: #fff;
 }
 .logo p {
-  font: 9px 'antonio-regular', sans-serif, arial;
+  font: 9px 'antonio-bold', sans-serif, arial;
   line-height: 9px;
   color: #fff;
 }
@@ -1106,7 +1164,7 @@ header {
   margin-right: 46px;
 }
 .nav a {
-  font: 14px/48px 'antonio-regular', sans-serif, arial;
+  font: 14px/48px 'antonio-bold', sans-serif, arial;
   text-transform: uppercase;
   color: #fff;
 }

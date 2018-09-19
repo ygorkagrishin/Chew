@@ -57,36 +57,61 @@
       <main class="page__main cont">
         <div class="cont__inf cont-inf">
           <div class="container">
-            <ul class="cont-inf__list">
-              <li class="cont-inf__item cont-inf__address">
-                <div class="cont-inf__pic"></div>
+            <div class="cont-inf__row">
+              <div class="cont-inf__col cont-inf__address">
+                <div class="cont-inf__pic-wrap">
+                  <div class="cont-inf__pic">
+                    <svg>
+                      <use xlink:href="sprite-svg.svg#_ionicons_svg_ios-pin"></use>
+                    </svg>
+                  </div>
+                </div>
                 <div class="cont-inf__text-container">
                   <p>
                     16/8 W 19th St, Chelsea
                     Manhattan, NY 10001
                   </p>
                 </div>
-              </li>
-              <li class="cont-inf__item cont-inf__phone">
-                <div class="cont-inf__pic"></div>
+              </div>
+              <div class="cont-inf__col cont-inf__phone">
+                <div class="cont-inf__pic-wrap">
+                  <div class="cont-inf__pic">
+                    <svg>
+                      <use xlink:href="sprite-svg.svg#_ionicons_svg_ios-call"></use>
+                    </svg>
+                  </div>
+                </div>
                 <div class="cont-inf__text-container">
                   <p>212-342-67382</p>
                 </div>
-              </li>
-              <li class="cont-inf__item cont-inf__email">
-                <div class="cont-inf__pic"></div>
+              </div>
+              <div class="cont-inf__col cont-inf__email">
+                <div class="cont-inf__pic-wrap">
+                  <div class="cont-inf__pic">
+                    <svg>
+                      <use xlink:href="sprite-svg.svg#_ionicons_svg_ios-mail"></use>
+                    </svg>
+                  </div>
+                </div>
                 <div class="cont-inf__text-container">
                   <p>
                     reservation@chew.com
                     info@chew.com
                   </p>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="cont__map-container">
-          <div class="cont__map" id="map"></div>
+        <div class="cont__map cont-map">
+          <div class="cont-map__container">
+            <div class="cont-map__map" id="map"></div>
+            <div class="cont-map__modal">
+              <div class="cont-map__name">chew.</div>
+              <p class="cont-map__address">
+                 No. 16/8 W 47th St <br> Manhattan, New York, NY 10001</p><span class="cont-map__phone">212-342-67382</span>
+            </div>
+          </div>
         </div>
         <div class="container cont__container">
           <h2 class="cont__title sect__title">contact form</h2>
