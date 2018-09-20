@@ -1,3 +1,5 @@
+/* Стили формы и списка статей наследуются из _reservation */
+
 .page__homepage
   .page__hero
     background url('img/content/homepage/annie-spratt-464747-unsplash_1920px.png') no-repeat center / cover
@@ -171,6 +173,8 @@
   font-size 14px
 
 // Form
+
+/* Стили формы и списка статей наследуются из _reservation */
 .homepage-reserv
   margin-bottom 150px
   padding-bottom 66px
@@ -216,17 +220,12 @@
     margin-bottom 30px
 
 .homepage-form__col
-  float left
   &_size_md
-    width 50%
-    @supports(display flex)
-      flex-basis 50%
+    flex-basis 50%
   &_size_lg
-    width 100%
-    @supports(display flex)
-      flex-basis 100%
+    flex-basis 100%
   &:not(:last-child)
-      padding-right 10px
+    margin-right 10px
 
 .homepage-form__label
   display block

@@ -1,0 +1,69 @@
+extends layout/_layout
+
+block title
+  title Chew
+
+block scripts
+  script(src="jquery.min.js")
+
+block content 
+  //- page reservaton content
+  .page__reserv
+    //- page hero
+    .page__hero
+      include modules/_header
+
+      .container
+        h1.page__headline
+          span make
+          <br>
+          | Reservation
+
+      .page__inf.page__inf_align_center
+        p.page__phone Quick Reservation: <span>+212 342 67382</span> 
+        include modules/_social
+    //- page hero end
+ 
+    //- main reservation page
+    main.page__main.reserv
+      .container
+        h2.sect__title.reserv__title Powered by <span>open table</span>
+
+        h3.reserv__main-title Booking a table 
+
+        //- reservation 
+        .reserv__row.reserv__reserv
+
+          //- reservation form container
+          .reserv__col.reserv__col_size_md.reserv__form-container
+            p.reserv__nb
+              | Welcome to Chew Restaurant! 
+              | Please use the form below to book a table online. This is powered by <span>OpenTable.</span>
+            form(action="").reserv__form.reserv-form#reserv-form
+              .reserv-form__row
+                .reserv-form__col.reserv-form__col_size_md
+                  label(for="data").reserv-form__label Data
+                  input(type="text", name="data", id="data").reserv-form__input
+                .reserv-form__col.reserv-form__col_size_md
+                  label(for="time").reserv-form__label Time
+                  input(type="text", name="time", id="time").reserv-form__input
+              .reserv-form__row
+                .reserv-form__col.reserv-form__col_size_lg
+                  label(for="guests").reserv-form__label I want to book a table for
+                  input(type="text", name="guests", id="guests").reserv-form__input
+              .reserv-form__row
+                .reserv-form__col.reserv-form__col_size_lg
+                  button(type="submit").reserv-form__submit.reserv-form__btn.btn.btn_type_orange Book now
+          //- reservation form container end  
+          
+          //- reservation location
+          .reserv__col.reserv__col_size_md.reserv__location-container
+            img(src="img/content/homepage/location.png", alt="location").reserv__location
+          //- reservation location end
+
+        //- reservation end
+
+    //- main reservation page end
+
+    .page__footer
+      include modules/_footer
