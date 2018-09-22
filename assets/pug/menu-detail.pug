@@ -1,0 +1,139 @@
+extends layout/_layout
+
+block title
+  title Chew
+
+block scripts
+  script(src="jquery.min.js")
+
+block content 
+  //- page content menu detail
+  .page__detail
+    //- page hero
+    .page__hero
+      include modules/_header
+
+      .container
+        h1.page__headline
+          span order
+          <br>
+          | food online
+
+      .page__inf.page__inf_align_center
+        p.page__phone Quick Reservation: <span>+212 342 67382</span> 
+        include modules/_social
+    //- page hero end
+
+    main.page__main.detail
+      .container
+        //- detail product
+        .detail__prod.detail-prod
+          .detail-prod__row.detail-prod__container
+            .detail-prod__col.detail-prod__pic
+              img(src="", alt="product")
+            //- product order box
+            .detail-prod__col.detail-prod__order-box
+              .detail-prod__header
+                h3.detail-prod__name Poacher eggs and asparagus
+              
+              span.detail-prod__price $4.49
+
+              .detail-prod__desc
+                p
+                  | Fusce imperdiet libero et eros tincidunt, 
+                  | vitae accumsan purus pulvinar. Vivamus varius, 
+                  | metus et scelerisque viverra, elit urna malesuada est,
+                  | non condimentum orci orci vel diam. 
+                  | Donec convallis ipsum sit amet eleifend lobortis. 
+                  | Mauris placerat neque eu fringilla accumsan.
+              
+              .detail-prod__prod
+                .detail-prod__quantity
+                  button(type="button")
+                    svg
+                      use(xlink:href="sprite-svg.svg#_ionicons_svg_ios-remove")
+                  span.detail-prod__quantity-num 1
+                  button(type="button")
+                    svg
+                      use(xlink:href="sprite-svg.svg#_ionicons_svg_ios-add")
+                button(type="button").detail-prod__btn.btn.btn_type_orange add to chart
+            //- product order box end
+        //- detail product
+
+        //- full description the product
+        .detail__more.detail-more
+          ul.detail-more__tabs
+            li
+              button(type="button").detail-more__state_type_active Description
+            li
+              button(type="button") Reviews
+
+          .detail-more__cont
+            p
+              | Morbi mattis, lorem sit amet gravida eleifend, nisl felis tincidunt dui, 
+              | nec porta turpis ligula eu nisl. Donec lacus dolor, facilisis at tortor ac, 
+              | congue vulputate ligula. Quisque eleifend volutpat orci nec fermentum. 
+              | Curabitur quis dignissim nibh. Suspendisse potenti. Vivamus dictum volutpat dapibus. 
+              | Fusce sed varius massa. Ut ornare est et sollicitudin vehicula. 
+              | Nulla venenatis auctor quam, ac porta lectus dictum in. 
+              | Aliquam sodales nisi sit amet lorem tincidunt, sit amet sodales massa vehicula. 
+
+            p
+              | Fusce et purus sit amet erat fermentum rutrum. 
+              | Pellentesque pellentesque auctor vehicula. Integer ut ligula blandit, 
+              | pellentesque neque in, hendrerit magna. Nunc porta vehicula mauris, 
+              | a hendrerit dolor tempor sed. Etiam euismod dignissim fermentum. 
+              | Maecenas tincidunt finibus auctor. Proin nec tempus nulla, et euismod nulla. 
+              | Donec ut sem ipsum. Integer ultricies nisi sed augue interdum porta. 
+              | Vestibulum ac aliquam risus, ac dictum magna. Fusce lacus arcu, 
+              | facilisis eu odio nec, varius vestibulum sem.
+        //- full description the product end
+
+        //- related menu
+        .detail__related-menu.detail-related-menu
+          h4.detail-related-menu__caption Related menu
+
+          ul.detail-related-menu__list
+            li.deatil-related-menu__item
+              .detail-related-menu__img-container
+                img(src="img/content/.png", alt="dish").detail-related__img
+
+              .detail-related-menu__cont
+                .detail-related-menu__header
+                  h5.detail-related-menu__name Poached eggs and asparagus
+                  span.detail-related-menu__price $4.49
+
+                p.detail-related-menu__comp
+                  | Eggs, asparagus, bread, toased, buttered
+
+            li.deatil-related-menu__item
+              .detail-related-menu__img-container
+                img(src="img/content/.png", alt="dish").detail-related__img
+
+              .detail-related-menu__cont
+                .detail-related-menu__header
+                  h5.detail-related-menu__name Poached eggs and asparagus
+                  span.detail-related-menu__price $4.49
+
+                p.detail-related-menu__comp
+                  | Eggs, asparagus, bread, toased, buttered
+            
+            li.deatil-related-menu__item
+              .detail-related-menu__img-container
+                img(src="img/content/.png", alt="dish").detail-related__img
+
+              .detail-related-menu__cont
+                .detail-related-menu__header
+                  h5.detail-related-menu__name Poached eggs and asparagus
+                  span.detail-related-menu__price $4.49
+
+                p.detail-related-menu__comp
+                  | Eggs, asparagus, bread, toased, buttered
+              
+        //- related menu end
+
+    //- page footer
+    .page__footer
+      include modules/_footer
+    //- page footer end
+  //- page conten menu detail end

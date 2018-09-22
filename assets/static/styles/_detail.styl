@@ -1,0 +1,167 @@
+.detail-prod
+  margin-bottom 100px
+
+.detail-prod__row
+  display flex
+
+.detail-prod__col
+  flex-basis 50%
+
+.detail-prod__order-box
+  padding-left 30px
+
+.detail-prod__name
+  margin-bottom 30px
+  font-size 30px
+
+.detail-prod__price
+  font 30px / 1 baseFont2
+  color blackColor
+
+.detail-prod__desc
+  padding 32px 0
+
+.detail-prod__prod
+  display flex
+  height 40px
+
+.detail-prod__quantity
+  display flex
+  align-items center
+  justify-content space-between
+
+  width 130px
+  height inherit
+  margin-right 10px
+  padding 3px
+
+  font-family baseFont2
+
+  border 1px solid greyColor
+  button 
+    width 32px
+    height 32px
+
+    text-align center
+    color whiteColor
+
+    background-color greyColor
+    svg 
+      width 20px !important
+
+      fill whiteColor 
+    &:hover
+      background-color yellowColor
+      svg 
+        fill blackColor
+
+.detail-prod__btn
+  height inherit
+  padding 0 36px
+
+  line-height 42px
+
+.detail-more
+  margin-bottom 50px
+  padding 50px 0
+
+  border-top 1px solid greyColor
+  border-bottom 1px solid greyColor
+  p:not(:last-child)
+    margin-bottom 38px
+
+.detail-more__tabs
+  display flex
+  align-items center
+  justify-content center
+
+  margin-bottom 38px
+
+  li:not(:last-child)
+    margin-right 44px
+
+  button
+    position relative
+    z-index $z-index1
+
+    font 24px / 1 baseFont2
+    text-transform uppercase
+    color greyColor    
+    &.detail-more__state_type_active
+      color blackColor
+      &::after
+        content ''
+
+        position absolute
+        bottom 2px
+        left 0
+        z-index -1
+
+        width 100%
+        height 5px
+
+        background-color yellowColor
+
+.detail-related-menu__caption
+  @extend .sect__title
+  text-align center
+
+.detail-related-menu__list
+  display flex
+  justify-content space-between
+
+.deatil-related-menu__item
+  flex 1 0 370px
+
+  border 1px solid greyColor
+  &:not(:last-child)
+    margin-right 30px
+
+.detail-related-menu__cont
+  padding 20px 20px
+
+.detail-related-menu__img-container
+  position relative
+  z-index $z-index1
+
+  padding-top 220px
+
+  background-color greyColor
+
+.detail-related-menu__img
+  position absolute
+  top 0
+  left 0
+  z-index $z-index1
+
+  width 100%
+  height 100%
+
+.detail-related-menu__header
+  position relative
+  z-index $z-index1
+  
+  margin-bottom 20px
+  padding-bottom 20px
+  &::after
+    content ''
+
+    position absolute
+    bottom 0
+    left 0 
+    z-index $z-index1 
+
+    width 30px
+    height 2px
+
+    background-color yellowColor
+
+.detail-related-menu__name
+  margin-bottom 14px
+
+  font 18px / 1 baseFont2
+  color blackColor
+
+.detail-related-menu__price
+  font 14px / 1 baseFont2
+  color greyColor

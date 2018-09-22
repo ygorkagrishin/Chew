@@ -275,43 +275,44 @@ body {
   padding: 0 15px;
 }
 h1 {
-  font: 48px/1 'antonio-bold', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h2 {
-  font: 48px/1 'antonio-bold', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h3 {
-  font: 48px/1 'antonio-bold', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h4 {
-  font: 48px/1 'antonio-bold', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h5 {
-  font: 48px/1 'antonio-bold', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
 h6 {
-  font: 48px/1 'antonio-bold', sans-serif, arial;
+  font: 48px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
-.sect__title {
+.sect__title,
+.detail-related-menu__caption {
   margin-bottom: 52px;
   font-size: 14px;
   letter-spacing: 0.7px;
 }
 .btn {
   display: inline-block;
-  font: 14px 'antonio-bold', sans-serif, arial;
+  font: 14px 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #fff;
   border-radius: 25px;
@@ -383,7 +384,7 @@ h6 {
 }
 .page__phone {
   margin-bottom: 12px;
-  font: 14px/1 'antonio-bold', sans-serif, arial;
+  font: 14px/1 'antonio-regular', sans-serif, arial;
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #fff;
@@ -503,7 +504,7 @@ h6 {
 .homepage-form__label {
   display: block;
   margin-bottom: 10px;
-  font: 14px/1 'antonio-bold', sans-serif, arial;
+  font: 14px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #fff;
 }
@@ -746,7 +747,7 @@ h6 {
   text-transform: initial;
 }
 .homepage-dish__price {
-  font: 14px/1 'antonio-bold', sans-serif, arial;
+  font: 14px/1 'antonio-regular', sans-serif, arial;
 }
 .homepage-dish__comp {
   font-size: 14px;
@@ -799,7 +800,7 @@ h6 {
   margin-bottom: 26px;
 }
 .homepage-post__continue {
-  font: 14px/1 'antonio-bold', sans-serif, arial;
+  font: 14px/1 'antonio-regular', sans-serif, arial;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #000;
@@ -905,7 +906,7 @@ h6 {
   display: block;
   width: 40px;
   height: 40px;
-  font: 14px/41px 'antonio-bold', sans-serif, arial;
+  font: 14px/41px 'antonio-regular', sans-serif, arial;
   border: 1px solid #797979;
   border-radius: 50%;
 }
@@ -1000,10 +1001,187 @@ h6 {
   line-height: 1;
 }
 .menu-list-dish__price {
-  font: 18px/1 'antonio-bold', sans-serif, arial;
+  font: 18px/1 'antonio-regular', sans-serif, arial;
 }
 .page__menu-list .page__footer {
   background: #797979 url("img/content/menu-list/avi-richards-719272-unsplash_1920px.png") no-repeat center/cover;
+}
+.detail-prod {
+  margin-bottom: 100px;
+}
+.detail-prod__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.detail-prod__col {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.detail-prod__order-box {
+  padding-left: 30px;
+}
+.detail-prod__name {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.detail-prod__price {
+  font: 30px/1 'antonio-regular', sans-serif, arial;
+  color: #000;
+}
+.detail-prod__desc {
+  padding: 32px 0;
+}
+.detail-prod__prod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+}
+.detail-prod__quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 130px;
+  height: inherit;
+  margin-right: 10px;
+  padding: 3px;
+  font-family: 'antonio-regular', sans-serif, arial;
+  border: 1px solid #797979;
+}
+.detail-prod__quantity button {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  color: #fff;
+  background-color: #797979;
+}
+.detail-prod__quantity button svg {
+  width: 20px !important;
+  fill: #fff;
+}
+.detail-prod__quantity button:hover {
+  background-color: #efba39;
+}
+.detail-prod__quantity button:hover svg {
+  fill: #000;
+}
+.detail-prod__btn {
+  height: inherit;
+  padding: 0 36px;
+  line-height: 42px;
+}
+.detail-more {
+  margin-bottom: 50px;
+  padding: 50px 0;
+  border-top: 1px solid #797979;
+  border-bottom: 1px solid #797979;
+}
+.detail-more p:not(:last-child) {
+  margin-bottom: 38px;
+}
+.detail-more__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 38px;
+}
+.detail-more__tabs li:not(:last-child) {
+  margin-right: 44px;
+}
+.detail-more__tabs button {
+  position: relative;
+  z-index: 1;
+  font: 24px/1 'antonio-regular', sans-serif, arial;
+  text-transform: uppercase;
+  color: #797979;
+}
+.detail-more__tabs button.detail-more__state_type_active {
+  color: #000;
+}
+.detail-more__tabs button.detail-more__state_type_active::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 5px;
+  background-color: #efba39;
+}
+.detail-related-menu__caption {
+  text-align: center;
+}
+.detail-related-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.deatil-related-menu__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 370px;
+          flex: 1 0 370px;
+  border: 1px solid #797979;
+}
+.deatil-related-menu__item:not(:last-child) {
+  margin-right: 30px;
+}
+.detail-related-menu__cont {
+  padding: 20px 20px;
+}
+.detail-related-menu__img-container {
+  position: relative;
+  z-index: 1;
+  padding-top: 220px;
+  background-color: #797979;
+}
+.detail-related-menu__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.detail-related-menu__header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.detail-related-menu__header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 30px;
+  height: 2px;
+  background-color: #efba39;
+}
+.detail-related-menu__name {
+  margin-bottom: 14px;
+  font: 18px/1 'antonio-regular', sans-serif, arial;
+  color: #000;
+}
+.detail-related-menu__price {
+  font: 14px/1 'antonio-regular', sans-serif, arial;
+  color: #797979;
 }
 .page__cont .page__hero {
   background: #797979 url("img/content/contact/rob-bye-141857-unsplash_1920px.png") no-repeat center/cover;
@@ -1109,7 +1287,7 @@ h6 {
 }
 .cont-map__name {
   margin-bottom: 12px;
-  font: 36px/1 'antonio-bold', sans-serif, arial;
+  font: 36px/1 'antonio-regular', sans-serif, arial;
 }
 .cont-map__phone {
   color: #2b9ddf;
@@ -1143,7 +1321,7 @@ h6 {
 .cont-form__label {
   display: block;
   margin-bottom: 14px;
-  font: 14px/1 'antonio-bold', sans-serif, arial;
+  font: 14px/1 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #000;
 }
@@ -1189,7 +1367,7 @@ header {
   color: #fff;
 }
 .logo p {
-  font: 9px 'antonio-bold', sans-serif, arial;
+  font: 9px 'antonio-regular', sans-serif, arial;
   line-height: 9px;
   color: #fff;
 }
@@ -1205,7 +1383,7 @@ header {
   margin-right: 46px;
 }
 .nav a {
-  font: 14px/48px 'antonio-bold', sans-serif, arial;
+  font: 14px/48px 'antonio-regular', sans-serif, arial;
   text-transform: uppercase;
   color: #fff;
 }
