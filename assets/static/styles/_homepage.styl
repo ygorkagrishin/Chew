@@ -174,7 +174,9 @@
 
 // Form
 
-/* Стили формы и списка статей наследуются из _reservation */
+/* !!!!!!!!!!!!!!!!!!!!! */
+/* Стили формы из _reservation */
+/* !!!!!!!!!!!!!!!!!!!!! */
 .homepage-reserv
   margin-bottom 150px
   padding-bottom 66px
@@ -183,83 +185,40 @@
   margin-bottom 30px
 
 .homepage-reserv__reserv
-  position relative
-  z-index: $z-index1
-  padding 63px 72px 70px 72px
-  background greyColor url('img/content/homepage/nick-karvounis-463853-unsplash_form.png') no-repeat center / cover
-  &::after
-    content ''
-    position absolute
-    top 0
-    left 0
-    z-index -1 
-    width 100%
-    height 100%
-    background-color rgba(blackColor,.7)
+ @extend .reserv__reserv
 
 .homepage-reserv__nb
-  margin-bottom 22px
-  color whiteColor
-  span 
-    color yellowColor
+  @extend .reserv__nb
 
 .homepage-reserv__row
-  display flex
+  @extend .reserv__row
 
 .homepage-reserv__col
-  flex-basis 50%
-  &:not(:last-child)
-    padding-right 54px
+  @extend .reserv__col
 
 .homepage-form__rows
-  margin-bottom 31px
+  @extend .reserv-form__rows
 
 .homepage-form__row
-  display flex
-  &:not(:last-child)
-    margin-bottom 30px
+  @extend .reserv-form__row
 
 .homepage-form__col
-  &_size_md
-    flex-basis 50%
-  &_size_lg
-    flex-basis 100%
-  &:not(:last-child)
-    margin-right 10px
+  @extend .reserv-form__col
 
 .homepage-form__label
-  display block
-  margin-bottom 10px
-  font 14px / 1 baseFont2
-  text-transform uppercase
-  color whiteColor
+  @extend .reserv-form__label
 
 .homepage-form__input
-  width 100%
-  padding 7px 20px
-  background-color whiteColor
+  @extend .reserv-form__input
 
 .homepage-form__submit
-  height 39px
-  padding 0 36px
-  font-size 12px
-  line-height 41px
+  @extend .reserv-form__submit
 
-.homepage-reserv__map
-  position relative
+.homepage-reserv__location-container
+  @extend .reserv__location-container
 
-.homepage-reserv__pic
-  position absolute
-  top 6px
-  left 3%
-  width 97.5%
-  padding-top 408px
-  img  
-    position absolute
-    top 0
-    left 0
-    width 100%
-    height 100%
+.homepage-reserv__location
+  @extend .reserv__location
 
 // Blog
 .homepage-blog__top

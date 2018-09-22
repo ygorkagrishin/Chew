@@ -1,3 +1,7 @@
+.page__reserv
+  .page__hero
+    background greyColor url('img/content/reserv/nick-karvounis-463853-unsplash_form.png') no-repeat top / cover
+
 .reserv
   padding 150px 0 170px 0
 
@@ -32,7 +36,7 @@
   z-index: $z-index1
 
   padding 63px 72px 71px 72px
-  background greyColor url('img/content/homepage/nick-karvounis-463853-unsplash_form.png') no-repeat center / cover
+  background greyColor url('img/content/reserv/nick-karvounis-463853-unsplash_form.png') no-repeat center / cover
   &::after
     content ''
     position absolute
@@ -58,10 +62,17 @@
   span 
     color yellowColor
 
+/* !!!!!!!!!!!!!!!!!!!!! */
+/* Стили формы наследуются в _homepage */
+/* !!!!!!!!!!!!!!!!!!!!! */
+
+.reserv-form__rows
+  margin-bottom 29px
+
 .reserv-form__row
   display flex
   &:not(:last-child)
-    margin-bottom 29px
+    @extend .reserv-form__rows
 
 .reserv-form__col
   &_size_lg
@@ -103,3 +114,7 @@
     left 0
     width 100%
     height 100%
+
+.page__reserv
+  .page__footer
+    background greyColor url('img/content/reserv/nick-karvounis-463853-unsplash_form.png') no-repeat bottom / cover

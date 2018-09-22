@@ -181,32 +181,30 @@ block content
           h2.sect__title Reservation
 
           h3.homepage-reserv__title Book a table  
-          .homepage-reserv__reserv
-            .homepage-reserv__row
-              .homepage-reserv__col
-                p.homepage-reserv__nb
-                  | Welcome to Chew Restaurant! Please use form below
-                  | to book to table online. This is powered by <span>OpenTable.</span>
+          .homepage-reserv__reserv.homepage-reserv__row
+            .homepage-reserv__col
+              p.homepage-reserv__nb
+                | Welcome to Chew Restaurant! Please use form below
+                | to book to table online. This is powered by <span>OpenTable.</span>
 
-                form(action="").homepage-reserv__form.homepage-form#reservation
-                  .homepage-form__rows
-                    .homepage-form__row
-                      .homepage-form__col.homepage-form__col_size_md
-                        label(for="data").homepage-form__label Data
-                        input(type="text", name="data", id="data").homepage-form__input.homepage-form__data
-                      .homepage-form__col.homepage-form__col_size_md
-                        label(for="time").homepage-form__label Time
-                        input(type="text", name="time", id="time").homepage-form__input.homepage-form__time
-                    .homepage-form__row
-                      .homepage-form__col.homepage-form__col_size_lg
-                        label(for="guests").homepage-form__label I want to book a table for
-                        input(type="text", name="guests", id="guests").homepage-form__input.homepage-form__guests
-                  button(type="submit").homepage-form__submit.homepage-form__btn.homepage-form__btn_type_orange.btn.btn_type_orange
-                    | Book now
-              .homepage-reserv__col
-                .homepage-reserv__map
-                  .homepage-reserv__pic
-                    img(src="img/content/homepage/location.png", alt="map pic")
+              form(action="").homepage-reserv__form.homepage-form#reservation
+                .homepage-form__rows
+                  .homepage-form__row
+                    .homepage-form__col.homepage-form__col_size_md
+                      label(for="data").homepage-form__label Data
+                      input(type="text", name="data", id="data").homepage-form__input
+                    .homepage-form__col.homepage-form__col_size_md
+                      label(for="time").homepage-form__label Time
+                      input(type="text", name="time", id="time").homepage-form__input
+                  .homepage-form__row
+                    .homepage-form__col.homepage-form__col_size_lg
+                      label(for="guests").homepage-form__label I want to book a table for
+                      input(type="text", name="guests", id="guests").homepage-form__input
+                button(type="submit").homepage-form__submit.homepage-form__btn.homepage-form__btn_type_orange.btn.btn_type_orange
+                  | Book now
+            .homepage-reserv__col.homepage-reserv__location-container
+              img(src="img/content/homepage/location.png", alt="map pic").homepage-reserv__location
+                  
                   
         section.sect.homepage__blog.homepage-blog
           .homepage-blog__top

@@ -23,7 +23,7 @@
             <ul>
               <li><a href="homepage.html">Home</a></li>
               <li><a href="menu-list.html">Menus</a></li>
-              <li><a href="javascript:void(0);">Reservation</a></li>
+              <li><a href="reservation.html">Reservation</a></li>
               <li><a href="javascript:void(0);">Blog</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="contact.html">Contact</a></li>
@@ -199,41 +199,35 @@
           <section class="sect homepage__reserv homepage-reserv">
             <h2 class="sect__title">Reservation</h2>
             <h3 class="homepage-reserv__title">Book a table  </h3>
-            <div class="homepage-reserv__reserv">
-              <div class="homepage-reserv__row">
-                <div class="homepage-reserv__col">
-                  <p class="homepage-reserv__nb">
-                    Welcome to Chew Restaurant! Please use form below
-                    to book to table online. This is powered by <span>OpenTable.</span>
-                  </p>
-                  <form class="homepage-reserv__form homepage-form" action="" id="reservation">
-                    <div class="homepage-form__rows">
-                      <div class="homepage-form__row">
-                        <div class="homepage-form__col homepage-form__col_size_md">
-                          <label class="homepage-form__label" for="data">Data</label>
-                          <input class="homepage-form__input homepage-form__data" type="text" name="data" id="data">
-                        </div>
-                        <div class="homepage-form__col homepage-form__col_size_md">
-                          <label class="homepage-form__label" for="time">Time</label>
-                          <input class="homepage-form__input homepage-form__time" type="text" name="time" id="time">
-                        </div>
+            <div class="homepage-reserv__reserv homepage-reserv__row">
+              <div class="homepage-reserv__col">
+                <p class="homepage-reserv__nb">
+                  Welcome to Chew Restaurant! Please use form below
+                  to book to table online. This is powered by <span>OpenTable.</span>
+                </p>
+                <form class="homepage-reserv__form homepage-form" action="" id="reservation">
+                  <div class="homepage-form__rows">
+                    <div class="homepage-form__row">
+                      <div class="homepage-form__col homepage-form__col_size_md">
+                        <label class="homepage-form__label" for="data">Data</label>
+                        <input class="homepage-form__input" type="text" name="data" id="data">
                       </div>
-                      <div class="homepage-form__row">
-                        <div class="homepage-form__col homepage-form__col_size_lg">
-                          <label class="homepage-form__label" for="guests">I want to book a table for</label>
-                          <input class="homepage-form__input homepage-form__guests" type="text" name="guests" id="guests">
-                        </div>
+                      <div class="homepage-form__col homepage-form__col_size_md">
+                        <label class="homepage-form__label" for="time">Time</label>
+                        <input class="homepage-form__input" type="text" name="time" id="time">
                       </div>
                     </div>
-                    <button class="homepage-form__submit homepage-form__btn homepage-form__btn_type_orange btn btn_type_orange" type="submit">Book now</button>
-                  </form>
-                </div>
-                <div class="homepage-reserv__col">
-                  <div class="homepage-reserv__map">
-                    <div class="homepage-reserv__pic"><img src="img/content/homepage/location.png" alt="map pic"></div>
+                    <div class="homepage-form__row">
+                      <div class="homepage-form__col homepage-form__col_size_lg">
+                        <label class="homepage-form__label" for="guests">I want to book a table for</label>
+                        <input class="homepage-form__input" type="text" name="guests" id="guests">
+                      </div>
+                    </div>
                   </div>
-                </div>
+                  <button class="homepage-form__submit homepage-form__btn homepage-form__btn_type_orange btn btn_type_orange" type="submit">Book now</button>
+                </form>
               </div>
+              <div class="homepage-reserv__col homepage-reserv__location-container"><img class="homepage-reserv__location" src="img/content/homepage/location.png" alt="map pic"></div>
             </div>
           </section>
           <section class="sect homepage__blog homepage-blog">

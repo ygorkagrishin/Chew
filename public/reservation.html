@@ -23,7 +23,7 @@
             <ul>
               <li><a href="homepage.html">Home</a></li>
               <li><a href="menu-list.html">Menus</a></li>
-              <li><a href="javascript:void(0);">Reservation</a></li>
+              <li><a href="reservation.html">Reservation</a></li>
               <li><a href="javascript:void(0);">Blog</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="contact.html">Contact</a></li>
@@ -63,26 +63,26 @@
                 Please use the form below to book a table online. This is powered by <span>OpenTable.</span>
               </p>
               <form class="reserv__form reserv-form" action="" id="reserv-form">
-                <div class="reserv-form__row">
-                  <div class="reserv-form__col reserv-form__col_size_md">
-                    <label class="reserv-form__label" for="data">Data</label>
-                    <input class="reserv-form__input" type="text" name="data" id="data">
+                <div class="reserv-form__rows">
+                  <div class="reserv-form__row">
+                    <div class="reserv-form__col reserv-form__col_size_md">
+                      <label class="reserv-form__label" for="data">Data</label>
+                      <input class="reserv-form__input" type="text" name="data" id="data">
+                    </div>
+                    <div class="reserv-form__col reserv-form__col_size_md">
+                      <label class="reserv-form__label" for="time">Time</label>
+                      <input class="reserv-form__input" type="text" name="time" id="time">
+                    </div>
                   </div>
-                  <div class="reserv-form__col reserv-form__col_size_md">
-                    <label class="reserv-form__label" for="time">Time</label>
-                    <input class="reserv-form__input" type="text" name="time" id="time">
+                  <div class="reserv-form__row">
+                    <div class="reserv-form__col reserv-form__col_size_lg">
+                      <label class="reserv-form__label" for="guests">I want to book a table for</label>
+                      <input class="reserv-form__input" type="text" name="guests" id="guests">
+                    </div>
                   </div>
                 </div>
-                <div class="reserv-form__row">
-                  <div class="reserv-form__col reserv-form__col_size_lg">
-                    <label class="reserv-form__label" for="guests">I want to book a table for</label>
-                    <input class="reserv-form__input" type="text" name="guests" id="guests">
-                  </div>
-                </div>
-                <div class="reserv-form__row">
-                  <div class="reserv-form__col reserv-form__col_size_lg">
-                    <button class="reserv-form__submit reserv-form__btn btn btn_type_orange" type="submit">Book now</button>
-                  </div>
+                <div class="reserv-form__btn-container">
+                  <button class="reserv-form__submit reserv-form__btn btn btn_type_orange" type="submit">Book now</button>
                 </div>
               </form>
             </div>
